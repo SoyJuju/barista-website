@@ -58,6 +58,7 @@
 
   &--links {
     color: getColor(neutral, 100);
+    transition-duration: 0.2s;
     cursor: pointer;
 
     &:hover {
@@ -67,6 +68,8 @@
     @media (max-width: $medium-breakpoint) {
       padding-block: 0.6rem;
     }
+
+    font-weight: getFontWeight(medium);
   }
 
   &--dropdown {

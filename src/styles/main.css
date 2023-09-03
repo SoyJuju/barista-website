@@ -539,7 +539,9 @@ svg {
 }
 .header--links {
   color: #ffffff;
+  transition-duration: 0.2s;
   cursor: pointer;
+  font-weight: 500;
 }
 .header--links:hover {
   color: rgb(222, 118, 0);

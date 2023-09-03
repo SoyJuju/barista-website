@@ -1,0 +1,47 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+@use '../utility/breakpoints' as *;
+
+.homepage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+  &--container {
+    @include centerDiv;
+    min-height: 100vh;
+  }
+
+  &--heading {
+    font-family: $font-family-secondary;
+    font-size: 5rem;
+    height: 110px;
+  }
+
+  &--subheading {
+    margin-bottom: 1rem;
+  }
+
+  &--social {
+    font-family: $font-family-third;
+    font-size: 1rem;
+    font-weight: getFontWeight(light);
+
+    background-color: transparent;
+    color: getColor(neutral, 100);
+
+    cursor: pointer;
+    padding: 0.2rem 0.8rem;
+
+    border-radius: 4px;
+    border: 1px getColor(neutral, 100) solid;
+
+    transition: background-color 0.15s, color 0.15s;
+
+    &:hover {
+      background-color: getColor(accent, 200);
+      color: getColor(neutral, 100);
+    }
+  }
+}

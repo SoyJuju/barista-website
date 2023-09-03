@@ -1,0 +1,89 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+@use '../utility/breakpoints' as *;
+
+.header {
+  background-color: getColor(accent, 100);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-bottom: 2px getColor(neutral, 100) solid;
+
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+
+  &--container {
+    @include spaceBtwn;
+  }
+
+  &--left {
+    @include alignCenter;
+    gap: 0.8rem;
+  }
+
+  &--logo {
+    width: 2.8rem;
+    border-radius: 50%;
+  }
+
+  &--title {
+    font-family: $font-family-secondary;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+
+  &--right {
+    width: 29rem;
+    @include spaceBtwn;
+
+    @media (max-width: $medium-breakpoint) {
+      display: none;
+    }
+  }
+
+  &--right__toggle {
+    @media (max-width: $medium-breakpoint) {
+      display: block;
+      position: absolute;
+      inset: 4rem 0 auto auto;
+      width: 10rem;
+      padding: 1rem 2rem;
+
+      background-color: rgba(199, 191, 191, 0.351);
+    }
+  }
+
+  &--links {
+    color: getColor(neutral, 100);
+    cursor: pointer;
+
+    &:hover {
+      color: getColor(primary, 400);
+    }
+
+    @media (max-width: $medium-breakpoint) {
+      padding-block: 0.6rem;
+    }
+  }
+
+  &--dropdown {
+    @include centerDiv;
+    background-color: transparent;
+    border: 0;
+    height: 3rem;
+    width: 3rem;
+
+    cursor: pointer;
+
+    @media (min-width: $medium-breakpoint) {
+      display: none;
+    }
+
+    &__menu {
+      width: 2rem;
+    }
+  }
+}

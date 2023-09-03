@@ -1,0 +1,8 @@
+@use './abstracts/' as *;
+@use './utility/' as *;
+@use './components/' as *;
+@use './layouts/' as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

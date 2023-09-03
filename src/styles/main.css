@@ -1,0 +1,610 @@
+:root {
+  --clr-primary-400: rgb(222, 118, 0);
+  --clr-secondary-400: hsl(215, 90%, 42%);
+  --clr-accent-100: rgba(255, 255, 255, 0.0196078431);
+  --clr-accent-200: rgba(108, 117, 125, 0.523);
+  --clr-accent-300: rgba(81, 81, 81, 0.9);
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-900: #000000;
+}
+
+.text-primary-400 {
+  color: rgb(222, 118, 0);
+}
+
+.bg-primary-400 {
+  background-color: rgb(222, 118, 0);
+}
+
+.text-secondary-400 {
+  color: hsl(215, 90%, 42%);
+}
+
+.bg-secondary-400 {
+  background-color: hsl(215, 90%, 42%);
+}
+
+.text-accent-100 {
+  color: rgba(255, 255, 255, 0.0196078431);
+}
+
+.text-accent-200 {
+  color: rgba(108, 117, 125, 0.523);
+}
+
+.text-accent-300 {
+  color: rgba(81, 81, 81, 0.9);
+}
+
+.bg-accent-100 {
+  background-color: rgba(255, 255, 255, 0.0196078431);
+}
+
+.bg-accent-200 {
+  background-color: rgba(108, 117, 125, 0.523);
+}
+
+.bg-accent-300 {
+  background-color: rgba(81, 81, 81, 0.9);
+}
+
+.text-neutral-100 {
+  color: #ffffff;
+}
+
+.text-neutral-900 {
+  color: #000000;
+}
+
+.bg-neutral-100 {
+  background-color: #ffffff;
+}
+
+.bg-neutral-900 {
+  background-color: #000000;
+}
+
+:root {
+  --fs-200: 0.75rem;
+  --fs-250: 0.82rem;
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-450: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-650: 1.625rem;
+  --fs-700: 1.875rem;
+  --fs-800: 2rem;
+  --fs-850: 2.5rem;
+  --fs-900: 2.75rem;
+  --fs-950: 3.4rem;
+  --fs-700: 1.5rem;
+  --fs-900: 2rem;
+}
+
+.fs-small-200 {
+  font-size: 0.75rem;
+}
+
+.fs-small-250 {
+  font-size: 0.82rem;
+}
+
+.fs-small-300 {
+  font-size: 0.875rem;
+}
+
+.fs-small-400 {
+  font-size: 1rem;
+}
+
+.fs-small-450 {
+  font-size: 1.125rem;
+}
+
+.fs-small-500 {
+  font-size: 1.25rem;
+}
+
+.fs-small-600 {
+  font-size: 1.5rem;
+}
+
+.fs-small-650 {
+  font-size: 1.625rem;
+}
+
+.fs-small-700 {
+  font-size: 1.875rem;
+}
+
+.fs-small-800 {
+  font-size: 2rem;
+}
+
+.fs-small-850 {
+  font-size: 2.5rem;
+}
+
+.fs-small-900 {
+  font-size: 2.75rem;
+}
+
+.fs-small-950 {
+  font-size: 3.4rem;
+}
+
+.fs-large-700 {
+  font-size: 1.5rem;
+}
+
+.fs-large-900 {
+  font-size: 2rem;
+}
+
+:root {
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.fs-primary-heading {
+  font-size: 2.75rem;
+}
+
+.fs-secondary-heading {
+  font-size: 1.875rem;
+}
+
+:root {
+  --size-100: 0.25rem;
+  --size-200: 0.5rem;
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-450: 1.25rem;
+  --size-500: 1.5rem;
+  --size-600: 2rem;
+  --size-700: 3rem;
+  --size-800: 4rem;
+  --size-850: 4.5rem;
+  --size-900: 5rem;
+}
+
+.padding-block-100 {
+  padding-block: 0.25rem;
+}
+
+.padding-block-200 {
+  padding-block: 0.5rem;
+}
+
+.padding-block-300 {
+  padding-block: 0.75rem;
+}
+
+.padding-block-400 {
+  padding-block: 1rem;
+}
+
+.padding-block-450 {
+  padding-block: 1.25rem;
+}
+
+.padding-block-500 {
+  padding-block: 1.5rem;
+}
+
+.padding-block-600 {
+  padding-block: 2rem;
+}
+
+.padding-block-700 {
+  padding-block: 3rem;
+}
+
+.padding-block-800 {
+  padding-block: 4rem;
+}
+
+.padding-block-850 {
+  padding-block: 4.5rem;
+}
+
+.padding-block-900 {
+  padding-block: 5rem;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  100% {
+    opacity: 0.5;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.focus-in-expand {
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.tracking-in-expand {
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-left {
+  animation: slide-in-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-right {
+  animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in-top {
+  animation: slide-in-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(222, 118, 0) !important;
+}
+
+.square-button {
+  border: 0;
+  padding: 0.4rem 1.3rem;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.year-button {
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 100vmax;
+  background-color: rgb(222, 118, 0);
+}
+
+.container {
+  --max-width: 1300px;
+  --padding: clamp(1rem, 5vw, 3rem);
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+}
+
+.flow * + * {
+  margin-top: var(--flow-spacer, 2em);
+}
+
+.two-columns {
+  display: grid;
+  gap: 5rem;
+}
+
+@media (min-width: 50em) {
+  .two-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+  .two-columns img {
+    margin: auto;
+  }
+}
+@media (max-width: 50em) {
+  .two-columns {
+    gap: 3rem;
+  }
+}
+@media (max-width: 50em) {
+  .small-reverse-order {
+    order: -1;
+  }
+}
+.center-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100vh;
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+/* A elements that don't have a class get default styles */
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.header {
+  background-color: rgba(255, 255, 255, 0.0196078431);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 2px #ffffff solid;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.header--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header--left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.header--logo {
+  width: 2.8rem;
+  border-radius: 50%;
+}
+.header--title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+.header--right {
+  width: 29rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 50em) {
+  .header--right {
+    display: none;
+  }
+}
+@media (max-width: 50em) {
+  .header--right__toggle {
+    display: block;
+    position: absolute;
+    inset: 4rem 0 auto auto;
+    width: 10rem;
+    padding: 1rem 2rem;
+    background-color: rgba(199, 191, 191, 0.351);
+  }
+}
+.header--links {
+  color: #ffffff;
+  cursor: pointer;
+}
+.header--links:hover {
+  color: rgb(222, 118, 0);
+}
+@media (max-width: 50em) {
+  .header--links {
+    padding-block: 0.6rem;
+  }
+}
+.header--dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+@media (min-width: 50em) {
+  .header--dropdown {
+    display: none;
+  }
+}
+.header--dropdown__menu {
+  width: 2rem;
+}
+
+.homepage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.homepage--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.homepage--heading {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 5rem;
+  height: 110px;
+}
+.homepage--subheading {
+  margin-bottom: 1rem;
+}
+.homepage--social {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.2rem 0.8rem;
+  border-radius: 4px;
+  border: 1px #ffffff solid;
+  transition: background-color 0.15s, color 0.15s;
+}
+.homepage--social:hover {
+  background-color: rgba(108, 117, 125, 0.523);
+  color: #ffffff;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;/*# sourceMappingURL=main.css.map */

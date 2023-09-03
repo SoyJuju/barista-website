@@ -569,6 +569,9 @@ svg {
 .header--dropdown__menu {
   width: 2rem;
 }
+.header--dropdown__menu__x {
+  width: 5rem;
+}
 
 .homepage {
   background-repeat: no-repeat;

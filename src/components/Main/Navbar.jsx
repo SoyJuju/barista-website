@@ -2,6 +2,7 @@ import '../../styles/main.css';
 
 import barista_logo from '../../assets/main_images/logo.png';
 import menu_icon from '../../assets/main_images/icon-menu.svg';
+import x_icon from '../../assets/main_images/icon-x.svg';
 
 import { useState, useEffect } from 'react';
 
@@ -43,7 +44,11 @@ export default function Navbar() {
           }}
           className="header--dropdown"
         >
-          <img class="header--dropdown__menu" src={menu_icon.src} alt="" />
+          <img
+            class="header--dropdown__menu"
+            src={mobileNav ? x_icon.src : menu_icon.src}
+            alt=""
+          />
         </button>
       </div>
     </header>

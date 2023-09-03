@@ -596,7 +596,7 @@ svg {
 }
 @media (max-width: 37em) {
   .homepage--subheading {
-    font-size: 3.35vw;
+    font-size: 3.8vw;
   }
 }
 .homepage--social {
@@ -617,7 +617,7 @@ svg {
 }
 @media (max-width: 37em) {
   .homepage--social {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 }
 

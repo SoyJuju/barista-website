@@ -585,8 +585,19 @@ svg {
   font-size: 5rem;
   height: 110px;
 }
+@media (max-width: 37em) {
+  .homepage--heading {
+    font-size: 13.5vw;
+    height: 18.5vw;
+  }
+}
 .homepage--subheading {
   margin-bottom: 1rem;
+}
+@media (max-width: 37em) {
+  .homepage--subheading {
+    font-size: 3.35vw;
+  }
 }
 .homepage--social {
   font-family: "Open Sans", sans-serif;
@@ -603,6 +614,11 @@ svg {
 .homepage--social:hover {
   background-color: rgba(108, 117, 125, 0.523);
   color: #ffffff;
+}
+@media (max-width: 37em) {
+  .homepage--social {
+    font-size: 2.5vw;
+  }
 }
 
 @tailwind base;

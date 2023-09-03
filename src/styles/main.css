@@ -2,7 +2,7 @@
   --clr-primary-400: rgb(222, 118, 0);
   --clr-secondary-400: hsl(215, 90%, 42%);
   --clr-accent-100: rgba(255, 255, 255, 0.0196078431);
-  --clr-accent-200: rgba(108, 117, 125, 0.523);
+  --clr-accent-200: rgba(77, 79, 81, 0.753);
   --clr-accent-300: rgba(81, 81, 81, 0.9);
   --clr-neutral-100: #ffffff;
   --clr-neutral-900: #000000;
@@ -29,7 +29,7 @@
 }
 
 .text-accent-200 {
-  color: rgba(108, 117, 125, 0.523);
+  color: rgba(77, 79, 81, 0.753);
 }
 
 .text-accent-300 {
@@ -41,7 +41,7 @@
 }
 
 .bg-accent-200 {
-  background-color: rgba(108, 117, 125, 0.523);
+  background-color: rgba(77, 79, 81, 0.753);
 }
 
 .bg-accent-300 {
@@ -531,15 +531,15 @@ svg {
   .header--right__toggle {
     display: block;
     position: absolute;
-    inset: 4rem 0 auto auto;
+    inset: 4.08rem 0 auto auto;
     width: 10rem;
     padding: 1rem 2rem;
-    background-color: rgba(199, 191, 191, 0.351);
+    background-color: rgba(77, 79, 81, 0.753);
   }
 }
 .header--links {
   color: #ffffff;
-  transition-duration: 0.2s;
+  transition-duration: 0.15s;
   cursor: pointer;
   font-weight: 500;
 }
@@ -548,7 +548,7 @@ svg {
 }
 @media (max-width: 50em) {
   .header--links {
-    padding-block: 0.6rem;
+    padding-block: 0.7rem;
   }
 }
 .header--dropdown {
@@ -617,7 +617,7 @@ svg {
   transition: background-color 0.15s, color 0.15s;
 }
 .homepage--social:hover {
-  background-color: rgba(108, 117, 125, 0.523);
+  background-color: rgba(77, 79, 81, 0.753);
   color: #ffffff;
 }
 @media (max-width: 37em) {

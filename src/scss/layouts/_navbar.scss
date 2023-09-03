@@ -48,17 +48,17 @@
     @media (max-width: $medium-breakpoint) {
       display: block;
       position: absolute;
-      inset: 4rem 0 auto auto;
+      inset: 4.08rem 0 auto auto;
       width: 10rem;
       padding: 1rem 2rem;
 
-      background-color: rgba(199, 191, 191, 0.351);
+      background-color: getColor(accent, 200);
     }
   }
 
   &--links {
     color: getColor(neutral, 100);
-    transition-duration: 0.2s;
+    transition-duration: 0.15s;
     cursor: pointer;
 
     &:hover {
@@ -66,7 +66,7 @@
     }
 
     @media (max-width: $medium-breakpoint) {
-      padding-block: 0.6rem;
+      padding-block: 0.7rem;
     }
 
     font-weight: getFontWeight(medium);

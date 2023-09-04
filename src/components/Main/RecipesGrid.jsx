@@ -11,8 +11,6 @@ export default function RecipeGrid({ Title, Content }) {
     </li>
   ));
 
-  console.log('Items', Items);
-
   return (
     <div className="recipe-grid--series">
       <h1 className="recipe-grid--heading | fs-small-800 fw-regular text-neutral-100">

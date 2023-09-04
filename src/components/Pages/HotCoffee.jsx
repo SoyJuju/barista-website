@@ -8,7 +8,7 @@ import RecipeGrid from '../Main/RecipesGrid';
 import hot_coffee_background from '../../assets/main_images/hot_coffee_background.jpg';
 
 import Espresso from '../../assets/recipe_grid/espresso.jpeg';
-import Macchiato from '../../assets/recipe_grid/macchiato.webp';
+import Macchiato from '../../assets/recipe_grid/macchiato.jpg';
 import Companna from '../../assets/recipe_grid/conpanna.jpg';
 import Romano from '../../assets/recipe_grid/romano.jpg';
 import Cappuccino from '../../assets/recipe_grid/Cappuccino.webp';

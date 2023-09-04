@@ -511,6 +511,17 @@ svg {
 }
 .recipe-items--label {
   font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+}
+@media (max-width: 60em) {
+  .recipe-items--label {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 40.5rem) {
+  .recipe-items--label {
+    font-size: 1.875rem;
+  }
 }
 
 .header {
@@ -689,8 +700,4 @@ svg {
 .recipe-grid--heading {
   padding-top: 5rem;
   font-family: "Poppins", sans-serif;
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

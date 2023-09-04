@@ -81,8 +81,8 @@ export default function HotCoffee() {
       <section className="recipe-grid | padding-block-400">
         <div className="container">
           <RecipeGrid Title="Hot Coffee Series" Content={HotCoffee} />
-          <RecipeGrid Title="Hot Coffee Series" Content={HotLatte} />
-          <RecipeGrid Title="Hot Coffee Series" Content={HotBrew} />
+          <RecipeGrid Title="Hot Latte Series" Content={HotLatte} />
+          <RecipeGrid Title="May Myo Brew Series" Content={HotBrew} />
         </div>
       </section>
     </main>

@@ -530,9 +530,9 @@ svg {
   .header--right__toggle {
     display: block;
     position: absolute;
-    inset: 4rem 0 auto;
+    inset: 4em 0 auto;
     width: 100vw;
-    padding: 0.84rem 2rem;
+    padding: 0.84em 2em;
     z-index: 10;
     background: rgba(50, 49, 49, 0.201);
     backdrop-filter: blur(10px);

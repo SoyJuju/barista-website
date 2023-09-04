@@ -4,6 +4,7 @@
   --clr-accent-100: rgba(255, 255, 255, 0.0196078431);
   --clr-accent-200: rgba(50, 49, 49, 0.201);
   --clr-accent-300: rgba(81, 81, 81, 0.9);
+  --clr-accent-400: rgba(182, 182, 182, 0.552);
   --clr-neutral-100: #ffffff;
   --clr-neutral-800: #010101;
   --clr-neutral-900: #000000;
@@ -37,6 +38,10 @@
   color: rgba(81, 81, 81, 0.9);
 }
 
+.text-accent-400 {
+  color: rgba(182, 182, 182, 0.552);
+}
+
 .bg-accent-100 {
   background-color: rgba(255, 255, 255, 0.0196078431);
 }
@@ -47,6 +52,10 @@
 
 .bg-accent-300 {
   background-color: rgba(81, 81, 81, 0.9);
+}
+
+.bg-accent-400 {
+  background-color: rgba(182, 182, 182, 0.552);
 }
 
 .text-neutral-100 {
@@ -503,6 +512,10 @@ svg {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+.recipe-items {
+  border-bottom: 1px solid rgba(182, 182, 182, 0.552);
+  padding-bottom: 0.7rem;
 }
 .recipe-items--image {
   aspect-ratio: 29.154/19.4;

@@ -4,6 +4,9 @@
 @use '../utility/breakpoints' as *;
 
 .recipe-items {
+  border-bottom: 1px solid getColor(accent, 400);
+  padding-bottom: 0.7rem;
+
   &--image {
     aspect-ratio: 29.154/19.4;
     border-radius: 0.6rem;

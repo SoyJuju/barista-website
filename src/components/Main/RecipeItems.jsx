@@ -2,7 +2,7 @@ import '../../styles/main.css';
 
 export default function RecipeItems(props) {
   return (
-    <div className="recipe-items | padding-block-100">
+    <div className="recipe-items">
       <img className="recipe-items--image" src={props.src} alt="" />
       <a
         href={props.link}

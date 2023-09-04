@@ -1,6 +1,6 @@
 import '../../styles/main.css';
 
-import background from '../../assets/main_images/main_background.png';
+import background from '../../assets/main_images/main_background.jpg';
 
 export default function Homepage() {
   return (

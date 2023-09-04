@@ -37,13 +37,13 @@
     width: 25rem;
     @include spaceBtwn;
 
-    @media (max-width: $medium-breakpoint) {
+    @media (max-width: $breakpoint-700) {
       display: none;
     }
   }
 
   &--right__toggle {
-    @media (max-width: $medium-breakpoint) {
+    @media (max-width: $breakpoint-700) {
       display: block;
       position: absolute;
       inset: 4em 0 auto;
@@ -70,7 +70,7 @@
       }
     }
 
-    @media (max-width: $medium-breakpoint) {
+    @media (max-width: $breakpoint-700) {
       padding-block: 1.1em;
     }
 
@@ -86,7 +86,7 @@
 
     cursor: pointer;
 
-    @media (min-width: $medium-breakpoint) {
+    @media (min-width: $breakpoint-700) {
       display: none;
     }
 

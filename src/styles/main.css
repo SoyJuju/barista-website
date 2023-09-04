@@ -5,6 +5,7 @@
   --clr-accent-200: rgba(50, 49, 49, 0.201);
   --clr-accent-300: rgba(81, 81, 81, 0.9);
   --clr-neutral-100: #ffffff;
+  --clr-neutral-800: #010101;
   --clr-neutral-900: #000000;
 }
 
@@ -52,12 +53,20 @@
   color: #ffffff;
 }
 
+.text-neutral-800 {
+  color: #010101;
+}
+
 .text-neutral-900 {
   color: #000000;
 }
 
 .bg-neutral-100 {
   background-color: #ffffff;
+}
+
+.bg-neutral-800 {
+  background-color: #010101;
 }
 
 .bg-neutral-900 {
@@ -629,6 +638,31 @@ svg {
   .homepage--social {
     font-size: 3vw;
   }
+}
+
+.preview {
+  padding-top: 4rem;
+  height: 28.125em;
+  background: no-repeat top right #010101;
+}
+.preview--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  height: 24.125em;
+  white-space: nowrap;
+  text-align: center;
+}
+.preview--heading-1 {
+  font-family: "Beau Rivage", cursive;
+  color: #ffffff;
+  font-size: 6.875rem;
+  height: 6.25rem;
+}
+.preview--heading-2 {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10rem;
 }
 
 @tailwind base;

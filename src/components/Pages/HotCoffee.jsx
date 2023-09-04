@@ -1,0 +1,13 @@
+import '../../styles/main.css';
+
+import { useMediaQuery } from '@mui/material';
+
+import Preview from '../Main/Preview';
+
+import hot_coffee_background from '../../assets/main_images/hot_coffee_background.png';
+
+export default function HotCoffee() {
+  const isDesktop = useMediaQuery('(min-width: 630px)');
+
+  return Preview(hot_coffee_background.src, '6.875rem', '10rem', isDesktop);
+}

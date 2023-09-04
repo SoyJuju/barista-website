@@ -1,0 +1,31 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+@use '../utility/breakpoints' as *;
+
+.preview {
+  padding-top: 4rem;
+  height: 28.125em;
+  background: no-repeat top right getColor(neutral, 800);
+
+  &--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    height: 24.125em;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  &--heading-1 {
+    font-family: $font-family-cursive;
+    color: getColor(neutral, 100);
+    font-size: 6.875rem;
+    height: 6.25rem;
+  }
+
+  &--heading-2 {
+    color: getColor(neutral, 100);
+    font-family: $font-family-third;
+    font-size: 10rem;
+  }
+}

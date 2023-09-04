@@ -70,7 +70,7 @@ export default function Navbar() {
           className="header--dropdown"
         >
           <img
-            class="header--dropdown__menu"
+            className="header--dropdown__menu"
             src={mobileNav ? x_icon.src : menu_icon.src}
             alt=""
           />

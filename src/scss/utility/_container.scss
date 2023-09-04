@@ -17,7 +17,7 @@
   gap: 5rem;
 }
 
-@media (min-width: bp.$medium-breakpoint) {
+@media (min-width: bp.$breakpoint-700) {
   .two-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
@@ -28,13 +28,13 @@
   }
 }
 
-@media (max-width: bp.$medium-breakpoint) {
+@media (max-width: bp.$breakpoint-700) {
   .two-columns {
     gap: 3rem;
   }
 }
 
-@media (max-width: bp.$medium-breakpoint) {
+@media (max-width: bp.$breakpoint-700) {
   .small-reverse-order {
     order: -1;
   }

@@ -18,8 +18,15 @@ export default function Navbar() {
   }, [mobileNav]);
 
   return (
-    <header className="header | padding-block-200">
-      <div className="header--container | container">
+    <header
+      className="header"
+      style={
+        mobileNav
+          ? { bottom: '25.35em' }
+          : { bottom: 'unset', borderBottom: '2px white solid' }
+      }
+    >
+      <div className="header--container | container padding-block-200">
         <div className="header--left">
           <img className="header--logo" src={barista_logo.src} alt="" />
           <a href="/" className="header--title | text-neutral-100 fw-medium">
@@ -30,12 +37,24 @@ export default function Navbar() {
           <ul
             role="list"
             className={'header--right' + (mobileNav ? '__toggle' : '')}
+            style={
+              mobileNav
+                ? { borderTop: '2px white solid' }
+                : { borderBottom: '0' }
+            }
           >
-            <li className="header--links">Home</li>
-            <li className="header--links">Hot Coffee</li>
-            <li className="header--links">Ice Coffee</li>
-            <li className="header--links">Drinks</li>
-            <li className="header--links">Fresh Juice</li>
+            <li className="header--links">
+              <a href="/">Home</a>
+            </li>
+            <li className="header--links">
+              <a href="/hot_coffee/">Hot Coffee</a>
+            </li>
+            <li className="header--links">
+              <a href="">Ice Coffee</a>
+            </li>
+            <li className="header--links">
+              <a href="">Drinks</a>
+            </li>
           </ul>
         </nav>
         <button

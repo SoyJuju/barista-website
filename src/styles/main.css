@@ -2,7 +2,7 @@
   --clr-primary-400: rgb(222, 118, 0);
   --clr-secondary-400: hsl(215, 90%, 42%);
   --clr-accent-100: rgba(255, 255, 255, 0.0196078431);
-  --clr-accent-200: rgba(77, 79, 81, 0.753);
+  --clr-accent-200: rgba(50, 49, 49, 0.201);
   --clr-accent-300: rgba(81, 81, 81, 0.9);
   --clr-neutral-100: #ffffff;
   --clr-neutral-900: #000000;
@@ -29,7 +29,7 @@
 }
 
 .text-accent-200 {
-  color: rgba(77, 79, 81, 0.753);
+  color: rgba(50, 49, 49, 0.201);
 }
 
 .text-accent-300 {
@@ -41,7 +41,7 @@
 }
 
 .bg-accent-200 {
-  background-color: rgba(77, 79, 81, 0.753);
+  background-color: rgba(50, 49, 49, 0.201);
 }
 
 .bg-accent-300 {
@@ -490,7 +490,6 @@ svg {
   background-color: rgba(255, 255, 255, 0.0196078431);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-bottom: 2px #ffffff solid;
   position: fixed;
   right: 0;
   left: 0;
@@ -531,24 +530,30 @@ svg {
   .header--right__toggle {
     display: block;
     position: absolute;
-    inset: 4.08rem 0 auto auto;
-    width: 10rem;
-    padding: 1rem 2rem;
-    background-color: rgba(77, 79, 81, 0.753);
+    inset: 4rem 0 auto;
+    width: 100vw;
+    padding: 0.84rem 2rem;
+    z-index: 10;
+    background: rgba(50, 49, 49, 0.201);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 }
 .header--links {
-  color: #ffffff;
   transition-duration: 0.15s;
   cursor: pointer;
+  text-align: center;
   font-weight: 500;
 }
-.header--links:hover {
+.header--links a {
+  color: #ffffff;
+}
+.header--links a:hover {
   color: rgb(222, 118, 0);
 }
 @media (max-width: 50em) {
   .header--links {
-    padding-block: 0.7rem;
+    padding-block: 1.1em;
   }
 }
 .header--dropdown {
@@ -617,7 +622,7 @@ svg {
   transition: background-color 0.15s, color 0.15s;
 }
 .homepage--social:hover {
-  background-color: rgba(77, 79, 81, 0.753);
+  background-color: rgba(50, 49, 49, 0.201);
   color: #ffffff;
 }
 @media (max-width: 37em) {

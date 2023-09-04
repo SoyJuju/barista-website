@@ -7,8 +7,6 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
-  border-bottom: 2px getColor(neutral, 100) solid;
-
   position: fixed;
   right: 0;
   left: 0;
@@ -48,25 +46,32 @@
     @media (max-width: $medium-breakpoint) {
       display: block;
       position: absolute;
-      inset: 4.08rem 0 auto auto;
-      width: 10rem;
-      padding: 1rem 2rem;
+      inset: 4rem 0 auto;
+      width: 100vw;
+      padding: 0.84rem 2rem;
+      z-index: 10;
 
-      background-color: getColor(accent, 200);
+      background: getColor(accent, 200);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
     }
   }
 
   &--links {
-    color: getColor(neutral, 100);
     transition-duration: 0.15s;
     cursor: pointer;
+    text-align: center;
 
-    &:hover {
-      color: getColor(primary, 400);
+    a {
+      color: getColor(neutral, 100);
+
+      &:hover {
+        color: getColor(primary, 400);
+      }
     }
 
     @media (max-width: $medium-breakpoint) {
-      padding-block: 0.7rem;
+      padding-block: 1.1em;
     }
 
     font-weight: getFontWeight(medium);

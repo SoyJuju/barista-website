@@ -76,7 +76,9 @@ export default function HotCoffee() {
         '10rem',
         isDesktop,
         '17.4vw',
-        '25.3vw'
+        '25.3vw',
+        "L e t ' s",
+        'B R E W'
       )}
       <section className="recipe-grid | padding-block-400">
         <div className="container">

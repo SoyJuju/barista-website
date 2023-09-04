@@ -56,7 +56,7 @@ export default function Navbar() {
               <a href="/hot_coffee/">Hot Coffee</a>
             </li>
             <li className="header--links">
-              <a href="">Ice Coffee</a>
+              <a href="/ice_coffee/">Ice Coffee</a>
             </li>
             <li className="header--links">
               <a href="">Drinks</a>

@@ -6,7 +6,9 @@ export default function Preview(
   font_size_2,
   isDesktop,
   font_size_1_small,
-  font_size_2_small
+  font_size_2_small,
+  title_1,
+  title_2
 ) {
   return (
     <section
@@ -28,7 +30,7 @@ export default function Preview(
                   : { fontSize: `${font_size_1}` }
               }
             >
-              L e t ' s
+              {title_1}
             </p>
             <p
               className="preview--heading-2 | fw-bold"
@@ -38,7 +40,7 @@ export default function Preview(
                   : { fontSize: `${font_size_2}` }
               }
             >
-              B R E W
+              {title_2}
             </p>
           </div>
         </div>

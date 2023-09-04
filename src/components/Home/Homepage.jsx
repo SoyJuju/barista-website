@@ -5,20 +5,20 @@ import background from '../../assets/main_images/main_background.jpg';
 export default function Homepage() {
   return (
     <section
-      class="homepage"
+      className="homepage"
       style={{ backgroundImage: `url(${background.src})` }}
     >
-      <div class="homepage--container | container">
+      <div className="homepage--container | container">
         <div className="homepage--content">
-          <p class="homepage--heading | text-neutral-100">Coffee Recipes</p>
-          <p class="homepage--subheading | fs-small-500 text-neutral-100">
+          <p className="homepage--heading | text-neutral-100">Coffee Recipes</p>
+          <p className="homepage--subheading | fs-small-500 text-neutral-100">
             Make every drink with satisfaction
           </p>
           <form
             target="_blank"
             action="https://www.facebook.com/baristachawsu/"
           >
-            <button class="homepage--social">Learn More</button>
+            <button className="homepage--social">Learn More</button>
           </form>
         </div>
       </div>

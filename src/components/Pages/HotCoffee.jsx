@@ -66,7 +66,7 @@ export default function HotCoffee() {
     { src: BrewAmericano.src, link: '/', label: 'Americano Brew' },
   ];
 
-  const isDesktop = useMediaQuery('(max-width: 630px)');
+  const isDesktop = useMediaQuery('(min-width: 630px)');
 
   return (
     <main>

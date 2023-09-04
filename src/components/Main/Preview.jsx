@@ -15,8 +15,8 @@ export default function Preview(
       className="preview"
       style={
         isDesktop
-          ? { backgroundImage: 'none' }
-          : { backgroundImage: `url(${background})` }
+          ? { backgroundImage: `url(${background})` }
+          : { backgroundImage: 'none' }
       }
     >
       <div className="container">
@@ -26,8 +26,8 @@ export default function Preview(
               className="preview--heading-1"
               style={
                 isDesktop
-                  ? { fontSize: `${font_size_1_small}` }
-                  : { fontSize: `${font_size_1}` }
+                  ? { fontSize: `${font_size_1}` }
+                  : { fontSize: `${font_size_1_small}` }
               }
             >
               {title_1}
@@ -36,8 +36,8 @@ export default function Preview(
               className="preview--heading-2 | fw-bold"
               style={
                 isDesktop
-                  ? { fontSize: `${font_size_2_small}` }
-                  : { fontSize: `${font_size_2}` }
+                  ? { fontSize: `${font_size_2}` }
+                  : { fontSize: `${font_size_2_small}` }
               }
             >
               {title_2}

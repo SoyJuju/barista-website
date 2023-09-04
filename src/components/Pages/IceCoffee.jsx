@@ -42,7 +42,7 @@ export default function IceCoffee() {
     { src: IcedChocolateLatte.src, link: '/', label: 'Iced Chocolate Latte' },
   ];
 
-  const isDesktop = useMediaQuery('(max-width: 690px)');
+  const isDesktop = useMediaQuery('(min-width: 690px)');
 
   return (
     <main>

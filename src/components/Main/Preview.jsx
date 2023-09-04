@@ -13,8 +13,8 @@ export default function Preview(
       className="preview"
       style={
         isDesktop
-          ? { backgroundImage: `url(${background})` }
-          : { backgroundImage: 'none' }
+          ? { backgroundImage: 'none' }
+          : { backgroundImage: `url(${background})` }
       }
     >
       <div className="container">
@@ -24,8 +24,8 @@ export default function Preview(
               className="preview--heading-1"
               style={
                 isDesktop
-                  ? { fontSize: `${font_size_1}` }
-                  : { fontSize: `${font_size_1_small}` }
+                  ? { fontSize: `${font_size_1_small}` }
+                  : { fontSize: `${font_size_1}` }
               }
             >
               L e t ' s
@@ -34,8 +34,8 @@ export default function Preview(
               className="preview--heading-2 | fw-bold"
               style={
                 isDesktop
-                  ? { fontSize: `${font_size_2}` }
-                  : { fontSize: `${font_size_2_small}` }
+                  ? { fontSize: `${font_size_2_small}` }
+                  : { fontSize: `${font_size_2}` }
               }
             >
               B R E W

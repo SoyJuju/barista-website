@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+@use './map-functions' as *;
+@use './mixins' as *;
+@use '../utility/breakpoints' as *;
+
+.recipe-items {
+  &--image {
+    aspect-ratio: 29.154/19.4;
+    border-radius: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  &--label {
+    font-family: $font-family-fifth;
+  }
+}

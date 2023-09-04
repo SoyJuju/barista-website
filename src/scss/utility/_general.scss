@@ -25,3 +25,11 @@ body {
   border-radius: 100vmax;
   background-color: func.getColor(primary, 400);
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+  column-gap: 1.8rem;
+  row-gap: 1.8rem;
+  padding-bottom: 1.8rem;
+}

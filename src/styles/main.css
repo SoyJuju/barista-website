@@ -391,6 +391,15 @@ body {
   background-color: rgb(222, 118, 0);
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+  -moz-column-gap: 1.8rem;
+       column-gap: 1.8rem;
+  row-gap: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+
 .container {
   --max-width: 1300px;
   --padding: clamp(1rem, 5vw, 3rem);
@@ -495,6 +504,15 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+.recipe-items--image {
+  aspect-ratio: 29.154/19.4;
+  border-radius: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.recipe-items--label {
+  font-family: "Lato", sans-serif;
+}
+
 .header {
   background-color: rgba(255, 255, 255, 0.0196078431);
   backdrop-filter: blur(10px);
@@ -663,6 +681,14 @@ svg {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 10rem;
+}
+
+.recipe-grid {
+  background-color: #010101;
+}
+.recipe-grid--heading {
+  padding-top: 5rem;
+  font-family: "Poppins", sans-serif;
 }
 
 @tailwind base;

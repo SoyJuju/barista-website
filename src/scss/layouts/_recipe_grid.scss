@@ -1,0 +1,12 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+@use '../utility/breakpoints' as *;
+
+.recipe-grid {
+  background-color: getColor(neutral, 800);
+
+  &--heading {
+    padding-top: getSize(900);
+    font-family: $font-family-fourth;
+  }
+}

@@ -4,26 +4,31 @@ import barista_logo from '../../assets/main_images/logo.png';
 import menu_icon from '../../assets/main_images/icon-menu.svg';
 import x_icon from '../../assets/main_images/icon-x.svg';
 
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 export default function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
+  const [height, setHeight] = useState(0);
+  const navRef = useRef(null);
 
   useEffect(() => {
     window.addEventListener('resize', () => setMobileNav(false));
+    setHeight(navRef.current.clientHeight);
 
     return () => {
       removeEventListener('resize', () => setMobileNav(false));
     };
   }, [mobileNav]);
 
+  const navHeight = 64 + height;
+
   return (
     <header
       className="header"
       style={
         mobileNav
-          ? { bottom: '25.35em' }
-          : { bottom: 'unset', borderBottom: '2px white solid' }
+          ? { height: navHeight }
+          : { height: 'unset', borderBottom: '2px white solid' }
       }
     >
       <div className="header--container | container padding-block-200">
@@ -37,6 +42,7 @@ export default function Navbar() {
           <ul
             role="list"
             className={'header--right' + (mobileNav ? '__toggle' : '')}
+            ref={navRef}
             style={
               mobileNav
                 ? { borderTop: '2px white solid' }

@@ -516,7 +516,7 @@ svg {
   white-space: nowrap;
 }
 .header--right {
-  width: 29rem;
+  width: 25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -28,6 +28,7 @@
   }
 
   &--list-container {
+    width: min(38rem, 100%);
     @media (max-width: $breakpoint-850) {
       width: min(35rem, 100%);
     }
@@ -59,6 +60,7 @@
 
 .recipe-list {
   padding-bottom: 1.5rem;
+  width: min(38rem, 100%);
 
   display: grid;
   row-gap: 2rem;

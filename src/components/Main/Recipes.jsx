@@ -12,9 +12,11 @@ export default function Recipes(props) {
   ));
 
   const Methods = Directions.map((direction, index) => (
-    <li className="text-neutral-100" key={index}>
-      {direction}
-    </li>
+    <li
+      className="text-neutral-100"
+      key={index}
+      dangerouslySetInnerHTML={{ __html: direction }}
+    />
   ));
 
   return (

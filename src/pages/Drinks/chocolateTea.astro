@@ -1,0 +1,27 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import PeachFruitTea from '../../assets/recipe_tag/peach fruit tea.webp';
+
+const Ingredients = [
+  'Cup Size - 360 ml',
+  'Choco Powder - 10 grams',
+  'Coco Powder - 10 grams',
+  'Hot Water - 80 grams',
+  'Ice - 150 grams',
+  'Milk Powder - 30 grams',
+  'Frappe Sauce - 20 grams',
+  'Milk - 80 grams',
+  'Sugar Syrup - 5 grams',
+  'Boba - 2 scoops',
+];
+
+const Directions = [
+  '<a href"https://www.facebook.com/baristachawsu/">Contact to Learn More</a>',
+];
+---
+
+<Recipes title="Chocolate Boba Latte Recipe" image={PeachFruitTea.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

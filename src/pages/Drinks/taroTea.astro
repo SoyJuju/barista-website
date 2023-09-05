@@ -1,0 +1,25 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import TaroBoba from '../../assets/recipe_tag/taro milk tea.jpg';
+
+const Ingredients = [
+  'Cup Size - 360 ml',
+  'Taro Powder - 25 grams',
+  'Hot Water - 80 grams',
+  'Ice - 150 grams',
+  'Milk Powder - 30 grams',
+  'Frappe Sauce - 15 grams',
+  'Milk - 80 grams',
+  'Boba - 2 scoops',
+];
+
+const Directions = [
+  '<a href"https://www.facebook.com/baristachawsu/">Contact to Learn More</a>',
+];
+---
+
+<Recipes title="Taro Boba Latte Recipe" image={TaroBoba.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

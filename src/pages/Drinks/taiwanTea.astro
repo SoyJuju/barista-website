@@ -1,0 +1,26 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import TaiwanMilkTea from '../../assets/recipe_tag/taiwan milk tea.png';
+
+const Ingredients = [
+  'Cup Size - 360 ml',
+  'Dried Tea Leaves - 15 grams',
+  'Hot Water - 200 grams',
+  'Ice - 150 grams',
+  'Milk Powder - 30 grams',
+  'Frappe Sauce - 20 grams',
+  'Brown Sugar Syrup - 10 grams',
+  'Sugar Syrup - 10 grams',
+  'Boba - 2 scoops',
+];
+
+const Directions = [
+  '<a href"https://www.facebook.com/baristachawsu/">Contact to Learn More</a>',
+];
+---
+
+<Recipes title="Taiwan Milk Tea Recipe" image={TaiwanMilkTea.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

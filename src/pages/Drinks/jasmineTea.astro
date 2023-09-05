@@ -2,7 +2,7 @@
 import Recipes from '../../layouts/Recipes.astro';
 import RecipeList from '../../components/Main/Recipes';
 
-import IceLemonTea from '../../assets/recipe_tag/ice lemon tea.webp';
+import JasmineGreenTea from '../../assets/recipe_tag/jasmine tea.jpg';
 
 const Ingredients = [
   'Cup Size - 700 ml',
@@ -22,6 +22,6 @@ const Directions = [
 ];
 ---
 
-<Recipes title="Iced Lemon Tea Recipe" image={IceLemonTea.src}>
+<Recipes title="Jasmine Green Tea Recipe" image={JasmineGreenTea.src}>
   <RecipeList Ingredients={Ingredients} Directions={Directions} />
 </Recipes>

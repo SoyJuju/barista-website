@@ -5,8 +5,6 @@
 .recipe {
   padding-top: 4rem;
   background-color: getColor(neutral, 800);
-  min-height: 100vh;
-  height: 100%;
 
   &--title {
     text-align: center;
@@ -34,8 +32,6 @@
 }
 
 .recipe-list {
-  height: 100%;
-
   padding-bottom: 1.5rem;
   margin-left: 7rem;
 

@@ -714,6 +714,7 @@ svg {
   padding-top: 4rem;
   background-color: #010101;
   min-height: 100vh;
+  height: 100%;
 }
 .recipe--title {
   text-align: center;

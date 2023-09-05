@@ -49,7 +49,7 @@
     transition: background-color 0.15s, color 0.15s;
 
     &:hover {
-      background-color: getColor(accent, 200);
+      background-color: getColor(accent, 300);
       color: getColor(neutral, 100);
     }
 

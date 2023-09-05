@@ -668,7 +668,7 @@ svg {
   transition: background-color 0.15s, color 0.15s;
 }
 .homepage--social:hover {
-  background-color: rgba(40, 40, 40, 0.386);
+  background-color: rgba(81, 81, 81, 0.9);
   color: #ffffff;
 }
 @media (max-width: 37em) {

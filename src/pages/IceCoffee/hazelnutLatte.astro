@@ -1,0 +1,26 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import IceHazelnutLatte from '../../assets/recipe_tag/ice caramel latte.webp';
+
+const Ingredients = [
+  '<a href="/">Double Shot Espresso (or)</a>',
+  '<a href="/">Ristretto</a>',
+  'Cup Size - 360 ml',
+  'Milk - 150 grams',
+  'Ice - 100 grams',
+  'Hazelnut Syrup - 20 grams',
+];
+
+const Directions = [
+  'Extract a cup of double shot espresso or a ristretto',
+  'Add the flavored syrup into the espresso and mix it well',
+  'Add milk into the specified cup and pour the espresso mix on top',
+  'Add more flavored syrup on top if desired along with the ice',
+];
+---
+
+<Recipes title="Iced Hazelnut Latte Recipe" image={IceHazelnutLatte.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

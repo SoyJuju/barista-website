@@ -1,0 +1,29 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import IceChoco from '../../assets/recipe_tag/ice chocolate.jpg';
+
+const Ingredients = [
+  'Cup Size - 360 ml',
+  'Milk - 150 grams',
+  'Ice - 100 grams',
+  'Choco Powder - 10 grams',
+  'Coco Powder - 10 grams',
+  'Hot Water - 30 grams',
+  'Frappe Sauce - 10 grams',
+  'Sugar Syrup - 5 grams',
+];
+
+const Directions = [
+  'Pour 30 grams of hot water in the specified cup',
+  'Mix the hot water with choco powder and coco powder',
+  'Mix 5 grams of condensed milk and 5 grams of evaporated milk to make the frappe sauce',
+  'Pour the frappe sauce and sugar syrup into the mix',
+  'Add ice along with any desired toppings',
+];
+---
+
+<Recipes title="Ice Chocolate Recipe" image={IceChoco.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

@@ -1,0 +1,26 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import IceBlack from '../../assets/recipe_tag/ice black.jpg';
+
+const Ingredients = [
+  '<a href="/HotCoffee/espresso">Double Shot Espresso (or)</a>',
+  '<a href="/HotCoffee/espresso">Ristretto</a>',
+  'Cup Size - 360 ml',
+  'Water - 50 grams',
+  'Ice - 100 grams',
+  'Lime - 20 gram',
+  'Sugar Syrup - 25 grams',
+];
+
+const Directions = [
+  'Extract a cup of ristretto or a double shot espresso',
+  'Add water, lime, sugar syrup, espresso and ice into the shaker',
+  'Shake all the ingredients throughly and pour them into the specified cup',
+];
+---
+
+<Recipes title="Iced Black Recipe" image={IceBlack.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

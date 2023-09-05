@@ -1,0 +1,29 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import IceSignatureLatte from '../../assets/recipe_tag/signature latte.jpg';
+
+const Ingredients = [
+  '<a href="/HotCoffee/espresso">Double Shot Espresso (or)</a>',
+  '<a href="/HotCoffee/espresso">Ristretto</a>',
+  'Cup Size - 360 ml',
+  'Milk - 150 grams',
+  'Ice - 100 grams',
+  'Frappe Sauce - 10 grams',
+  'Sugar Syrup - 5 grams',
+];
+
+const Directions = [
+  'Pour the milk into the specified cup',
+  'Mix 5 grams of condensed milk and 5 grams of evaporated milk to make the frappe sauce',
+  'Add the frappe sauce and the specified amount of sugar syrup into the milk',
+  'Put ice into the milk',
+  'Extract a cup of ristretto or a double shot espresso',
+  'Pour the espresso into the iced milk',
+];
+---
+
+<Recipes title="Iced Signature Latte Recipe" image={IceSignatureLatte.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

@@ -1,0 +1,30 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import IceMatcha from '../../assets/recipe_tag/ice matcha latte.jpg';
+
+const Ingredients = [
+  'Cup Size - 360 ml',
+  'Milk - 150 grams',
+  'Ice - 100 grams',
+  'Matcha Powder - 5 grams',
+  'Green Tea Syrup - 15 grams',
+  'Hot Water - 30 grams',
+  'Frappe Sauce - 10 grams',
+];
+
+const Directions = [
+  'Pour the milk into the specified cup',
+  'Put ice into the milk',
+  'Mix 5 grams of condensed milk and 5 grams of evaporated milk to make the frappe sauce',
+  'Add the frappe sauce into the iced milk',
+  'Pour 30 grams of hot water in the specified cup',
+  'Mix the hot water with matcha powder and green tea syrup',
+  'Pour the mix into the iced milk along with any desired toppings',
+];
+---
+
+<Recipes title="Ice Matcha Latte Recipe" image={IceMatcha.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

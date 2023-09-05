@@ -1,0 +1,26 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import IceCappuccino from '../../assets/recipe_tag/ice cappuccino.jpg';
+
+const Ingredients = [
+  '<a href="/HotCoffee/espresso">Double Shot Espresso (or)</a>',
+  '<a href="/HotCoffee/espresso">Ristretto</a>',
+  'Cup Size - 360 ml',
+  'Milk - 100 grams',
+  'Ice - 100 grams',
+];
+
+const Directions = [
+  'Froth the milk',
+  'Pour the milk into the specified cup',
+  'Put ice into the milk',
+  'Extract a cup of ristretto or a double shot espresso',
+  'Pour the espresso into the iced milk',
+];
+---
+
+<Recipes title="Iced Cappuccino Recipe" image={IceCappuccino.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

@@ -1,0 +1,25 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import IceLatte from '../../assets/recipe_tag/ice latte.webp';
+
+const Ingredients = [
+  '<a href="/HotCoffee/espresso">Double Shot Espresso (or)</a>',
+  '<a href="/HotCoffee/espresso">Ristretto</a>',
+  'Cup Size - 360 ml',
+  'Milk - 150 grams',
+  'Ice - 100 grams',
+];
+
+const Directions = [
+  'Pour the milk into the specified cup',
+  'Put ice into the milk',
+  'Extract a cup of ristretto or a double shot espresso',
+  'Pour the espresso into the iced milk',
+];
+---
+
+<Recipes title="Iced Latte Recipe" image={IceLatte.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

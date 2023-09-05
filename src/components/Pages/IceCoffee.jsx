@@ -42,46 +42,146 @@ import IcedAmericanoBrew from '../../assets/recipe_grid/ice brew americano.jpg';
 
 export default function IceCoffee() {
   const IceBrew = [
-    { src: IcedMayMyoBrew.src, link: '/', label: 'Iced May Myo Brew' },
-    { src: IcedMochaBrew.src, link: '/', label: 'Iced Mocha Brew' },
-    { src: IcedBlackBrew.src, link: '/', label: 'Iced Black Brew' },
-    { src: IcedAmericanoBrew.src, link: '/', label: 'Iced Americano Brew' },
+    {
+      src: IcedMayMyoBrew.src,
+      link: '/IceCoffee/mayMyoBrew',
+      label: 'Iced May Myo Brew',
+    },
+    {
+      src: IcedMochaBrew.src,
+      link: '/IceCoffee/mochaBrew',
+      label: 'Iced Mocha Brew',
+    },
+    {
+      src: IcedBlackBrew.src,
+      link: '/IceCoffee/blackBrew',
+      label: 'Iced Black Brew',
+    },
+    {
+      src: IcedAmericanoBrew.src,
+      link: '/IceCoffee/americanoBrew',
+      label: 'Iced Americano Brew',
+    },
   ];
 
   const IceFrappe = [
-    { src: MangoFrappe.src, link: '/', label: 'Mango Frappe' },
-    { src: ChocolateFrappe.src, link: '/', label: 'Chocolate Frappe' },
-    { src: MatchaFrappe.src, link: '/', label: 'Matcha Frappe' },
-    { src: BlueberryFrappe.src, link: '/', label: 'Blueberry Frappe' },
-    { src: OreoFrappe.src, link: '/', label: 'Oreo Frappe' },
+    {
+      src: MangoFrappe.src,
+      link: '/IceCoffee/mangoFrappe',
+      label: 'Mango Frappe',
+    },
+    {
+      src: ChocolateFrappe.src,
+      link: '/IceCoffee/chocolateFrappe',
+      label: 'Chocolate Frappe',
+    },
+    {
+      src: MatchaFrappe.src,
+      link: '/IceCoffee/matchaFrappe',
+      label: 'Matcha Frappe',
+    },
+    {
+      src: BlueberryFrappe.src,
+      link: '/IceCoffee/blueberryFrappe',
+      label: 'Blueberry Frappe',
+    },
+    {
+      src: OreoFrappe.src,
+      link: '/IceCoffee/oreoFrappe',
+      label: 'Oreo Frappe',
+    },
   ];
 
   const IceBlended = [
-    { src: CappuccinoBlended.src, link: '/', label: 'Cappuccino Blended' },
-    { src: MochaBlended.src, link: '/', label: 'Mocha Blended' },
-    { src: VanillaBlended.src, link: '/', label: 'Vanilla Coffee Blended' },
-    { src: CaramelBlended.src, link: '/', label: 'Caramel Coffee Blended' },
-    { src: HazelnutBlended.src, link: '/', label: 'Hazelnut Coffee Blended' },
-    { src: ChocolateBlended.src, link: '/', label: 'Chocolate Coffee Blended' },
+    {
+      src: CappuccinoBlended.src,
+      link: '/IceCoffee/cappuccinoBlended',
+      label: 'Cappuccino Blended',
+    },
+    {
+      src: MochaBlended.src,
+      link: '/IceCoffee/mochaBlended',
+      label: 'Mocha Blended',
+    },
+    {
+      src: VanillaBlended.src,
+      link: '/IceCoffee/vanillaBlended',
+      label: 'Vanilla Coffee Blended',
+    },
+    {
+      src: CaramelBlended.src,
+      link: '/IceCoffee/caramelBlended',
+      label: 'Caramel Coffee Blended',
+    },
+    {
+      src: HazelnutBlended.src,
+      link: '/IceCoffee/hazelnutBlended',
+      label: 'Hazelnut Coffee Blended',
+    },
+    {
+      src: ChocolateBlended.src,
+      link: '/IceCoffee/chocolateBlended',
+      label: 'Chocolate Coffee Blended',
+    },
   ];
 
   const IcedCoffee = [
-    { src: IcedCappuccino.src, link: '/', label: 'Iced Cappuccino' },
-    { src: IcedMocha.src, link: '/', label: 'Iced Mocha' },
-    { src: IcedAmericano.src, link: '/', label: 'Iced Americano' },
-    { src: IcedBlack.src, link: '/', label: 'Iced Black' },
-    { src: IcedChocolate.src, link: '/', label: 'Iced Chocolate' },
+    {
+      src: IcedCappuccino.src,
+      link: '/IceCoffee/cappuccino',
+      label: 'Iced Cappuccino',
+    },
+    { src: IcedMocha.src, link: '/IceCoffee/mocha', label: 'Iced Mocha' },
+    {
+      src: IcedAmericano.src,
+      link: '/IceCoffee/americano',
+      label: 'Iced Americano',
+    },
+    { src: IcedBlack.src, link: '/IceCoffee/black', label: 'Iced Black' },
+    {
+      src: IcedChocolate.src,
+      link: '/IceCoffee/chocolate',
+      label: 'Iced Chocolate',
+    },
   ];
 
   const IcedLatte = [
-    { src: IceLatte.src, link: '/', label: 'Iced Latte' },
-    { src: IcedSignatureLatte.src, link: '/', label: 'Iced Signature Latte' },
-    { src: IcedMatchaLatte.src, link: '/', label: 'Iced Matcha Latte' },
-    { src: IcedTaroLatte.src, link: '/', label: 'Iced Taro Latte' },
-    { src: IcedVanillaLatte.src, link: '/', label: 'Iced Vanilla Latte' },
-    { src: IcedCaramelLatte.src, link: '/', label: 'Iced Caramel Latte' },
-    { src: IcedHazelnutLatte.src, link: '/', label: 'Iced Hazelnut Latte' },
-    { src: IcedChocolateLatte.src, link: '/', label: 'Iced Chocolate Latte' },
+    { src: IceLatte.src, link: '/IceCoffee/latte', label: 'Iced Latte' },
+    {
+      src: IcedSignatureLatte.src,
+      link: '/IceCoffee/signatureLatte',
+      label: 'Iced Signature Latte',
+    },
+    {
+      src: IcedMatchaLatte.src,
+      link: '/IceCoffee/matchaLatte',
+      label: 'Iced Matcha Latte',
+    },
+    {
+      src: IcedTaroLatte.src,
+      link: '/IceCoffee/taroLatte',
+      label: 'Iced Taro Latte',
+    },
+    {
+      src: IcedVanillaLatte.src,
+      link: '/IceCoffee/vanillaLatte',
+      label: 'Iced Vanilla Latte',
+    },
+    {
+      src: IcedCaramelLatte.src,
+      link: '/IceCoffee/caramelLatte',
+      label: 'Iced Caramel Latte',
+    },
+    {
+      src: IcedHazelnutLatte.src,
+      link: '/IceCoffee/hazelnutLatte',
+      label: 'Iced Hazelnut Latte',
+    },
+    {
+      src: IcedChocolateLatte.src,
+      link: '/IceCoffee/chocolateLatte',
+      label: 'Iced Chocolate Latte',
+    },
   ];
 
   const isDesktop = useMediaQuery('(min-width: 690px)');

@@ -1,0 +1,26 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import HotTaroLatte from '../../assets/recipe_tag/taro latte.jpg';
+
+const Ingredients = [
+  'Cup Size - 360 ml',
+  'Milk - 150 grams',
+  'Milk Powder - 10 grams',
+  'Taro Powder - 25 grams',
+  'Hot Water - 30 grams',
+  'Ice - 100 grams',
+  'Frappe Sauce - 10 grams',
+];
+
+const Directions = [
+  'Mix the hot water with taro powder, milk powder and frappe sauce',
+  'Add milk into the specified cup along with the mix and ice',
+  'Add any desired topping on the top',
+];
+---
+
+<Recipes title="Taro Latte Recipe" image={HotTaroLatte.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

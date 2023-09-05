@@ -1,0 +1,29 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import IceMocha from '../../assets/recipe_tag/ice mocha.webp';
+
+const Ingredients = [
+  '<a href="/HotCoffee/espresso">Double Shot Espresso (or)</a>',
+  '<a href="/HotCoffee/espresso">Ristretto</a>',
+  'Cup Size - 360 ml',
+  'Ice - 100 grams',
+  'Choco Powder - 10 grams',
+  'Coco Powder - 5 grams',
+  'Frappe Sauce - 10 grams',
+  'Sugar Syrup - 5 grams',
+];
+
+const Directions = [
+  'Extract a cup of ristretto or a double shot espresso',
+  'Mix the espresso with the choco powder and the coco powderr',
+  'Mix 5 grams of condensed milk and 5 grams of evaporated milk to make the frappe sauce',
+  'Add the frappe sauce and sugar syrup into the espresso',
+  'Add ice along with any desired toppings',
+];
+---
+
+<Recipes title="Iced Mocha Recipe" image={IceMocha.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

@@ -1,0 +1,28 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import IceOreoBlended from '../../assets/recipe_tag/oreo frappe.jpg';
+
+const Ingredients = [
+  'Cup Size - 360 ml',
+  'Oreo Biscuits - 2 to 3 pieces',
+  'Vanilla Frappe Powder - 10 grams',
+  'Milk - 50 grams',
+  'Evaporated Milk - 30 grams',
+  'Sugar Syrup - 20 grams',
+  'Ice - 200 grams',
+  'Whipped Cream Optional',
+];
+
+const Directions = [
+  'Add all the ingredients into a blender',
+  'Blend them until the ice is into small bits but not dissolved',
+  'Pour the contents into a specifed cup',
+  'Add whipped cream and an oreo biscuit piece as topping if wanted',
+];
+---
+
+<Recipes title="Iced Oreo Frappe Recipe" image={IceOreoBlended.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

@@ -1,0 +1,29 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import IceChocolateFrappe from '../../assets/recipe_tag/chocolate frappe.webp';
+
+const Ingredients = [
+  'Cup Size - 360 ml',
+  'Choco Powder - 10 grams',
+  'Coco Powder - 10 grams',
+  'Vanilla Frappe Powder - 10 grams',
+  'Milk - 50 grams',
+  'Evaporated Milk - 30 grams',
+  'Sugar Syrup - 15 to 20 grams',
+  'Ice - 200 grams',
+  'Whipped Cream Optional',
+];
+
+const Directions = [
+  'Add all the ingredients into a blender',
+  'Blend them until the ice is into small bits but not dissolved',
+  'Pour the contents into a specifed cup',
+  'Add whipped cream as topping if wanted',
+];
+---
+
+<Recipes title="Iced Chocolate Frappe Recipe" image={IceChocolateFrappe.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

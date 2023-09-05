@@ -1,0 +1,27 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import IcedMayMyoBrewed from '../../assets/recipe_tag/ice-may-myo.jpeg';
+
+const Ingredients = [
+  'Cup Size - 360 ml',
+  'Coffee - 25 grams',
+  'Water - 150 grams',
+  'Milk Powder - 30 grams',
+  'Frappe Sauce - 10 grams',
+  'Sugar Syrup - 5 grams',
+  'Ice - 100 grams',
+];
+
+const Directions = [
+  'Add water and the grinded coffee grounds into the coffee maker',
+  'The output will be 50 grams less than the water added',
+  'In a separate cup add milk powder, frappe sauce, and sugar syrup',
+  'Mix the items in the cup with the output of the coffee maker and add ice',
+];
+---
+
+<Recipes title="Iced May Myo Brew Recipe" image={IcedMayMyoBrewed.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

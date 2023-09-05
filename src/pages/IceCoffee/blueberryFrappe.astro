@@ -1,0 +1,28 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import IceBlueberryFrappe from '../../assets/recipe_tag/blueberry frappe.jpeg';
+
+const Ingredients = [
+  'Cup Size - 360 ml',
+  'Ding Fong Blueberry - 20 grams',
+  'Juniper Blueberry - 10 grams',
+  'Vanilla Frappe Powder - 10 grams',
+  'Milk - 50 grams',
+  'Evaporated Milk - 30 grams',
+  'Ice - 200 grams',
+  'Whipped Cream Optional',
+];
+
+const Directions = [
+  'Add all the ingredients into a blender',
+  'Blend them until the ice is into small bits but not dissolved',
+  'Pour the contents into a specifed cup',
+  'Add whipped cream as topping if wanted',
+];
+---
+
+<Recipes title="Iced Blueberry Frappe Recipe" image={IceBlueberryFrappe.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

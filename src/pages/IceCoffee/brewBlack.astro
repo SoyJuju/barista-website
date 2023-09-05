@@ -1,0 +1,26 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import IceBrewedBlack from '../../assets/recipe_tag/ice black brew.jpg';
+
+const Ingredients = [
+  'Cup Size - 360 ml',
+  'Lime - 20 grams',
+  'Water - 150 grams',
+  'Sugar Syurp - 25 grams',
+  'Ice - 150 grams',
+  'Coffee - 25 grams',
+];
+
+const Directions = [
+  'Add water and the grinded coffee grounds into the coffee maker',
+  'The output will be 50 grams less than the water added',
+  'In a shaker, add lime, sugar syrup and the output of the coffee maker and shake it',
+  'Pour the contents of the shaker into a cup and add ice',
+];
+---
+
+<Recipes title="Iced Brew Black Recipe" image={IceBrewedBlack.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

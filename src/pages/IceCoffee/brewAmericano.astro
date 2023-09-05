@@ -1,0 +1,23 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import BrewedAmericano from '../../assets/recipe_tag/ice-americano-brew.jpg';
+
+const Ingredients = [
+  'Cup Size - 360 ml',
+  'Coffee - 25 grams',
+  'Water - 150 grams',
+  'Ice - 150 grams',
+];
+
+const Directions = [
+  'Add water and the grinded coffee grounds into the coffee maker',
+  'The output will be 50 grams less than the water added',
+  'Pour the contents of the coffee maker into a cup and ice',
+];
+---
+
+<Recipes title="Iced Brew Americano Recipe" image={BrewedAmericano.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

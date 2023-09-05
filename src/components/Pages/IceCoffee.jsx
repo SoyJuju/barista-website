@@ -54,12 +54,12 @@ export default function IceCoffee() {
     },
     {
       src: IcedBlackBrew.src,
-      link: '/IceCoffee/blackBrew',
+      link: '/IceCoffee/brewBlack',
       label: 'Iced Black Brew',
     },
     {
       src: IcedAmericanoBrew.src,
-      link: '/IceCoffee/americanoBrew',
+      link: '/IceCoffee/brewAmericano',
       label: 'Iced Americano Brew',
     },
   ];

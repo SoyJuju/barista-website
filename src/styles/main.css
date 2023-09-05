@@ -2,7 +2,7 @@
   --clr-primary-400: rgb(222, 118, 0);
   --clr-secondary-400: hsl(215, 90%, 42%);
   --clr-accent-100: rgba(255, 255, 255, 0.0196078431);
-  --clr-accent-200: rgba(85, 82, 82, 0.737);
+  --clr-accent-200: rgba(85, 82, 82, 0.545);
   --clr-accent-300: rgba(81, 81, 81, 0.9);
   --clr-accent-400: rgba(182, 182, 182, 0.552);
   --clr-neutral-100: #ffffff;
@@ -31,7 +31,7 @@
 }
 
 .text-accent-200 {
-  color: rgba(85, 82, 82, 0.737);
+  color: rgba(85, 82, 82, 0.545);
 }
 
 .text-accent-300 {
@@ -47,7 +47,7 @@
 }
 
 .bg-accent-200 {
-  background-color: rgba(85, 82, 82, 0.737);
+  background-color: rgba(85, 82, 82, 0.545);
 }
 
 .bg-accent-300 {
@@ -580,7 +580,7 @@ svg {
     width: 100vw;
     padding: 0.84em 2em;
     z-index: 10;
-    background: rgba(85, 82, 82, 0.737);
+    background: rgba(85, 82, 82, 0.545);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
@@ -668,7 +668,7 @@ svg {
   transition: background-color 0.15s, color 0.15s;
 }
 .homepage--social:hover {
-  background-color: rgba(85, 82, 82, 0.737);
+  background-color: rgba(85, 82, 82, 0.545);
   color: #ffffff;
 }
 @media (max-width: 37em) {

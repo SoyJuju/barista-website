@@ -1,0 +1,26 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import HotChocolateLatte from '../../assets/recipe_tag/Chocolate latte.webp';
+
+const Ingredients = [
+  '<a href="/HotCoffee/espresso">Single Shot Espresso (or)</a>',
+  '<a href="/HotCoffee/espresso">Ristretto</a>',
+  'Milk - 200 to 220 grams',
+  'Chocolate Syrup - 10 grams',
+];
+
+const Directions = [
+  'Extract a cup of single shot espresso or a ristretto',
+  'Add the flavored syrup into the espresso and mix it well',
+  'Froth the milk to around 60 to 65 degrees celsius',
+  'If the milk have too much foam, scoop some out',
+  'Pour the steamed milk into the espresso mixture to create a desired image',
+  'Add more flavored syrup on top if desired',
+];
+---
+
+<Recipes title="Chocolate Latte Recipe" image={HotChocolateLatte.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

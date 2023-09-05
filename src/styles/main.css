@@ -693,7 +693,6 @@ svg {
 .preview--heading-1 {
   font-family: "Beau Rivage", cursive;
   color: #ffffff;
-  font-size: 6.875rem;
   height: 6.25rem;
 }
 .preview--heading-2 {
@@ -733,6 +732,7 @@ svg {
   .recipe--container {
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
   }
 }
 .recipe--list-container {

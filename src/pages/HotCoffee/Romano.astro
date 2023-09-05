@@ -2,20 +2,20 @@
 import Recipes from '../../layouts/Recipes.astro';
 import RecipeList from '../../components/Main/Recipes';
 
-import HotAmericano from '../../assets/recipe_tag/americano.jpg';
+import HotRomano from '../../assets/recipe_tag/romano.jpg';
 
 const Ingredients = [
   '<a href="/HotCoffee/espresso">Single Shot Espresso</a>',
-  'Cup Size - 320 ml',
-  'Hot Water - 150 grams',
+  'Cup Size - 60 to 70 ml',
+  'Yellow Lemon Slice',
 ];
 
 const Directions = [
   'Extract a cup of single shot espresso',
-  'Pour 150 grams of hot water into the espresso',
+  'Add a yellow lemon slice to the edge of the cup or inside the espresso',
 ];
 ---
 
-<Recipes title="Americano Recipe" image={HotAmericano.src}>
+<Recipes title="Romano Recipe" image={HotRomano.src}>
   <RecipeList Ingredients={Ingredients} Directions={Directions} />
 </Recipes>

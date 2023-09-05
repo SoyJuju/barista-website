@@ -50,16 +50,16 @@ export default function Navbar() {
             }
           >
             <li className="header--links">
-              <a href="/">Home</a>
+              <a href="/Main/">Home</a>
             </li>
             <li className="header--links">
-              <a href="/hot_coffee/">Hot Coffee</a>
+              <a href="/Main/hot_coffee/">Hot Coffee</a>
             </li>
             <li className="header--links">
-              <a href="/ice_coffee/">Ice Coffee</a>
+              <a href="/Main/ice_coffee/">Ice Coffee</a>
             </li>
             <li className="header--links">
-              <a href="/drinks/">Drinks</a>
+              <a href="/Main/drinks/">Drinks</a>
             </li>
           </ul>
         </nav>

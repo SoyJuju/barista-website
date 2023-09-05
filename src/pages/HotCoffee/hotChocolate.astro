@@ -1,0 +1,27 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import HotChoco from '../../assets/recipe_tag/hot chocolate.jpg';
+
+const Ingredients = [
+  'Cup Size - 320 ml',
+  'Milk - 220 grams',
+  'Choco Powder - 10 grams',
+  'Coco Powder - 10 grams',
+  'Hot Water - 30 grams',
+];
+
+const Directions = [
+  'Froth the milk to around 60 to 65 degrees celsius',
+  'If the milk have too much foam, scoop some out',
+  'Pour 30 grams of hot water in the specified cup',
+  'Mix the hot water with choco powder and coco powder',
+  'Pour the milk foam into the espresso to create a desired image using any drawing methods',
+  'Add any desired topping on the milk foam',
+];
+---
+
+<Recipes title="Hot Chocolate Recipe" image={HotChoco.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

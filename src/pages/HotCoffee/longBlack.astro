@@ -1,0 +1,21 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import HotLongBlack from '../../assets/recipe_tag/long black.jpg';
+
+const Ingredients = [
+  '<a href="/HotCoffee/espresso">Double Shot Espresso</a>',
+  'Cup Size - 180 to 200 ml',
+  'Hot Water - 90 grams',
+];
+
+const Directions = [
+  'Extract a cup of single shot espresso',
+  'Pour the espresso into 90 grams of hot water',
+];
+---
+
+<Recipes title="Long Black Recipe" image={HotLongBlack.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

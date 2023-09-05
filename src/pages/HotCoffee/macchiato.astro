@@ -1,0 +1,40 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import HotMacchiato from '../../assets/recipe_tag/macchiato.png';
+
+const Throw_Ingredients = [
+  '<a href="/HotCoffee/espresso">Single Shot Espresso</a>',
+  'Cup Size - 90 to 100 ml',
+  'Milk - 100 grams',
+];
+
+const Throw_Directions = [
+  'Extract a cup of single shot espresso',
+  'Froth the milk',
+  'Pour the milk foam into the espresso to create a desired image',
+];
+
+const Pour_Ingredients = [
+  '<a href="/HotCoffee/espresso">Single Shot Espresso</a>',
+  'Cup Size - 60 to 70 ml',
+  'Milk - 100 grams',
+];
+
+const Pour_Directions = [
+  'Extract a cup of single shot espresso',
+  'Froth the milk',
+  'Get a spoon and scoop the top layer of the foam from the frothed milk',
+  'Put until the foam forms a circle and covers most of the top layer',
+];
+---
+
+<Recipes title="Macchiato Recipe" image={HotMacchiato.src}>
+  <div class="recipe--list-container">
+    <h2 class="recipe--heading">Throw Down Method</h2>
+    <RecipeList Ingredients={Throw_Ingredients} Directions={Throw_Directions} />
+    <h2 class="recipe--heading">Pouring Method</h2>
+    <RecipeList Ingredients={Pour_Ingredients} Directions={Pour_Directions} />
+  </div>
+</Recipes>

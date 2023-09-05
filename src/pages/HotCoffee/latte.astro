@@ -1,0 +1,40 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import HotLatte from '../../assets/recipe_tag/latte.webp';
+
+const Throw_Ingredients = [
+  '<a href="/HotCoffee/espresso">Single Shot Espresso (or)</a>',
+  '<a href="/HotCoffee/espresso">Ristretto</a>',
+  'Cup Size - 220 to 240 ml',
+  'Milk - 200 to 220 grams',
+];
+
+const Throw_Directions = [
+  'Extract a cup of single shot espresso or a ristretto',
+  'Froth the milk to around 55 to 60 degrees celsius',
+  'Pour the milk foam into the espresso to create a desired image',
+];
+
+const Pour_Ingredients = [
+  '<a href="/HotCoffee/espresso">Single Shot Espresso (or)</a>',
+  'Cup Size - 200 to 220 ml',
+  'Milk - 200 to 220 grams',
+];
+
+const Pour_Directions = [
+  'Extract a cup of single shot espresso',
+  'Froth the milk to around 55 to 60 degrees celsius',
+  'Pour the milk foam into the espresso to create a desired image',
+];
+---
+
+<Recipes title="Latte Recipe" image={HotLatte.src}>
+  <div class="recipe--list-container">
+    <h2 class="recipe--heading">Throw Down Method</h2>
+    <RecipeList Ingredients={Throw_Ingredients} Directions={Throw_Directions} />
+    <h2 class="recipe--heading">Layering Method</h2>
+    <RecipeList Ingredients={Pour_Ingredients} Directions={Pour_Directions} />
+  </div>
+</Recipes>

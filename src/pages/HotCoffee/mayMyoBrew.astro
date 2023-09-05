@@ -1,0 +1,28 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import MayMyoBrewed from '../../assets/recipe_tag/may myo brew.jpg';
+
+const Ingredients = [
+  'Cup Size - 8 ounces',
+  'Coffee Roast - Medium Dark',
+  'Coffee Grinding Size - Fine (no.1)',
+  'Coffee - 20 grams',
+  'Water - 400 grams',
+  'Milk Powder - 15 grams',
+  'Frappe Sauce - 10 grams',
+  'Sugar Syrup - 5 grams',
+];
+
+const Directions = [
+  'Add water and the grinded coffee grounds into the coffee maker',
+  'The output will be 50 grams less than the water added',
+  'In a separate cup add milk powder, frappe sauce, and sugar syrup',
+  'Mix the items in the cup with the output of the coffee maker',
+];
+---
+
+<Recipes title="May Myo Brew Recipe" image={MayMyoBrewed.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

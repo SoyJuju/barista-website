@@ -1,0 +1,24 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import BrewedBlack from '../../assets/recipe_tag/brew black coffee.webp';
+
+const Ingredients = [
+  'Cup Size - 8 ounces',
+  'Lime - 5 grams',
+  'Water - 200 grams',
+  'Coffee - 20 grams',
+];
+
+const Directions = [
+  'Add water and the grinded coffee grounds into the coffee maker',
+  'The output will be 50 grams less than the water added',
+  'In a shaker, add lime and the output of the coffee maker and shake it',
+  'Pour the contents of the shaker into a cup',
+];
+---
+
+<Recipes title="Brew Black Recipe" image={BrewedBlack.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

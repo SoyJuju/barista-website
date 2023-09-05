@@ -1,0 +1,27 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import HotMatchaLatte from '../../assets/recipe_tag/matcha latte.jpg';
+
+const Ingredients = [
+  'Cup Size - 220 ml',
+  'Milk - 200 to 220 grams',
+  'Matcha Powder - 3 grams',
+  'Green Tea Syrup - 5 grams',
+  'Hot Water - 30 grams',
+];
+
+const Directions = [
+  'Froth the milk to around 60 to 65 degrees celsius',
+  'If the milk have too much foam, scoop some out',
+  'Pour 30 grams of hot water in the specified cup',
+  'Mix the hot water with matcha powder and green tea syrup',
+  'Pour the milk foam into the espresso to create a desired image using any drawing methods',
+  'Add any desired topping on the milk foam',
+];
+---
+
+<Recipes title="Matcha Latte Recipe" image={HotMatchaLatte.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

@@ -1,0 +1,23 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import HotConpanna from '../../assets/recipe_tag/conpanna.png';
+
+const Ingredients = [
+  '<a href="/HotCoffee/espresso">Single Shot Espresso</a>',
+  'Cup Size - 60 to 70 ml',
+  'Whipped Cream',
+];
+
+const Directions = [
+  'Extract a cup of single shot espresso',
+  'Make whipped cream and put it in a pastry bag',
+  'Squeeze the whipped cream from the pastry bag to a desired amount into the espresso',
+  'Add any desired topping on the whipped cream',
+];
+---
+
+<Recipes title="Conpanna Recipe" image={HotConpanna.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

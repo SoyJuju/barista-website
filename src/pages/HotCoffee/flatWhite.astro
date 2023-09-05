@@ -1,0 +1,25 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import HotFlatWhite from '../../assets/recipe_tag/flat white.webp';
+
+const Ingredients = [
+  '<a href="/HotCoffee/espresso">Single Shot Espresso (or)</a>',
+  '<a href="/HotCoffee/espresso">Ristretto</a>',
+  '<a href="/HotCoffee/espresso">Double Shot Espresso</a>',
+  'Cup Size - 200 to 220 ml',
+  'Milk - 200 to 220 grams',
+];
+
+const Directions = [
+  'Extract a cup of single shot espresso, ristretto or double shot espresso',
+  'Froth the milk to around 60 to 65 degrees celsius',
+  'If the milk have too much foam, scoop some out',
+  'Pour the milk foam into the espresso to create a desired image using any drawing methods',
+];
+---
+
+<Recipes title="Flat White Recipe" image={HotFlatWhite.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

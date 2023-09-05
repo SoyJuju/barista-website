@@ -1,0 +1,27 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import HotCaramelLatte from '../../assets/recipe_tag/Caramel latte.jpg';
+
+const Ingredients = [
+  '<a href="/">Single Shot Espresso (or)</a>',
+  '<a href="/">Ristretto</a>',
+  'Cup Size - 220 ml',
+  'Milk - 200 to 220 grams',
+  'Caramel Syrup - 10 grams',
+];
+
+const Directions = [
+  'Extract a cup of single shot espresso or a ristretto',
+  'Add the flavored syrup into the espresso and mix it well',
+  'Froth the milk to around 60 to 65 degrees celsius',
+  'If the milk have too much foam, scoop some out',
+  'Pour the steamed milk into the espresso mixture to create a desired image',
+  'Add more flavored syrup on top if desired',
+];
+---
+
+<Recipes title="Caramel Latte Recipe" image={HotCaramelLatte.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

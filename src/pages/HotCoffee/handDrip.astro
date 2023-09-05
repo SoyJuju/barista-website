@@ -1,0 +1,24 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import HandDripped from '../../assets/recipe_tag/hand drip.jpg';
+
+const Ingredients = [
+  'V60 Coffee Maker',
+  'Paper Filtert',
+  'Coffee Roast - Light or Light to Medium',
+  'Coffee Grinding Size - Medium Coarse',
+];
+
+const Directions = [
+  'Ratio - 1 (coffee) : 15 (hot water)',
+  'Hot water temperature - 90 to 94 degree celsius',
+  'Bloom time - 30 sec',
+  'Brewing time - 2:30 to 3 mins',
+];
+---
+
+<Recipes title="Hand Drip Recipe" image={HandDripped.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

@@ -50,7 +50,7 @@ export default function Navbar() {
             }
           >
             <li className="header--links">
-              <a href="/Main/">Home</a>
+              <a href="/">Home</a>
             </li>
             <li className="header--links">
               <a href="/Main/hot_coffee/">Hot Coffee</a>

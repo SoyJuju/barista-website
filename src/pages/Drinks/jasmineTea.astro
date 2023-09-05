@@ -1,0 +1,27 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import IceLemonTea from '../../assets/recipe_tag/ice lemon tea.webp';
+
+const Ingredients = [
+  'Cup Size - 700 ml',
+  'Jasmine Green Tea - 1 bag',
+  'Lipton Tea - 2 bags',
+  'Hot Water - 200 grams',
+  'Ice - 200 to 250 grams',
+  'Lime - 30 grams',
+  'Honey - 10 to 15 grams',
+  'Sugar Syrup - 30 to 40 grams',
+];
+
+const Directions = [
+  'Dip the 3 tea bags in the hot water',
+  'Add all the ingredients along with the dipped hot water into a shaker',
+  'Pour the contents of the shaker into the specified cup and add ice',
+];
+---
+
+<Recipes title="Iced Lemon Tea Recipe" image={IceLemonTea.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

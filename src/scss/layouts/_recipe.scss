@@ -28,11 +28,12 @@
   }
 
   &--list-container {
-    width: min(35rem, 100%);
+    @media (max-width: $breakpoint-850) {
+      width: min(35rem, 100%);
+    }
 
     h2 {
       margin-left: 7rem;
-      width: 100%;
 
       @media (max-width: $breakpoint-850) {
         margin-left: 0;
@@ -63,12 +64,12 @@
   row-gap: 2rem;
 
   font-size: 1.25rem;
-  width: min(35rem, 100%);
 
   margin-left: 7rem;
 
   @media (max-width: $breakpoint-850) {
     margin-left: 0;
+    width: min(35rem, 100%);
   }
 
   a {

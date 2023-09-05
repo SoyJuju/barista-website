@@ -735,12 +735,13 @@ svg {
     align-items: center;
   }
 }
-.recipe--list-container {
-  width: min(35rem, 100%);
+@media (max-width: 65em) {
+  .recipe--list-container {
+    width: min(35rem, 100%);
+  }
 }
 .recipe--list-container h2 {
   margin-left: 7rem;
-  width: 100%;
 }
 @media (max-width: 65em) {
   .recipe--list-container h2 {
@@ -766,12 +767,12 @@ svg {
   display: grid;
   row-gap: 2rem;
   font-size: 1.25rem;
-  width: min(35rem, 100%);
   margin-left: 7rem;
 }
 @media (max-width: 65em) {
   .recipe-list {
     margin-left: 0;
+    width: min(35rem, 100%);
   }
 }
 .recipe-list a {

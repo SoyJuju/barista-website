@@ -1,0 +1,72 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+@use '../utility/breakpoints' as *;
+
+.recipe {
+  padding-top: 4rem;
+  background-color: getColor(neutral, 800);
+  min-height: 100vh;
+
+  &--title {
+    text-align: center;
+    font-family: $font-family-fourth;
+    font-size: 4.3rem;
+
+    @media (max-width: $breakpoint-200) {
+      font-size: 14.8vw;
+    }
+  }
+
+  &--container {
+    @include centerDiv;
+
+    @media (max-width: $breakpoint-800) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &--image {
+    width: min(30rem, 100%);
+    border-radius: 0.5rem;
+  }
+}
+
+.recipe-list {
+  height: 100%;
+
+  padding-bottom: 1.5rem;
+  margin-left: 7rem;
+
+  @media (max-width: $breakpoint-800) {
+    margin-left: 0;
+  }
+
+  display: grid;
+  row-gap: 2rem;
+  width: min(30rem, 100%);
+
+  font-size: 1.25rem;
+
+  a {
+    color: getColor(neutral, 100);
+  }
+
+  &--heading {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: getFontWeight(medium);
+    font-family: $font-family-third;
+    padding-bottom: 0.5rem;
+    border-bottom: solid getColor(accent, 400) 1px;
+  }
+
+  &--items {
+    margin-left: 1.3rem;
+
+    li {
+      padding-block: 0.3rem;
+    }
+  }
+}

@@ -43,7 +43,7 @@ export default function HotCoffee() {
     { src: FlatWhite.src, link: '/', label: 'Flat White' },
     { src: CafeMocha.src, link: '/', label: 'Cafe Mocha' },
     { src: HotChoclate.src, link: '/', label: 'Hot Chocolate' },
-    { src: Americano.src, link: '/', label: 'Americano' },
+    { src: Americano.src, link: '/HotCoffee/americano', label: 'Americano' },
     { src: Black.src, link: '/', label: 'Black' },
     { src: LongBlack.src, link: '/', label: 'Long Black' },
     { src: HandDrip.src, link: '/', label: 'Hand Drip' },

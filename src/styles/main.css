@@ -708,4 +708,68 @@ svg {
 .recipe-grid--heading {
   padding-top: 5rem;
   font-family: "Poppins", sans-serif;
+}
+
+.recipe {
+  padding-top: 4rem;
+  background-color: #010101;
+  min-height: 100vh;
+}
+.recipe--title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.3rem;
+}
+@media (max-width: 29rem) {
+  .recipe--title {
+    font-size: 14.8vw;
+  }
+}
+.recipe--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 60em) {
+  .recipe--container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.recipe--image {
+  width: min(30rem, 100%);
+  border-radius: 0.5rem;
+}
+
+.recipe-list {
+  height: 100%;
+  padding-bottom: 1.5rem;
+  margin-left: 7rem;
+  display: grid;
+  row-gap: 2rem;
+  width: min(30rem, 100%);
+  font-size: 1.25rem;
+}
+@media (max-width: 60em) {
+  .recipe-list {
+    margin-left: 0;
+  }
+}
+.recipe-list a {
+  color: #ffffff;
+}
+.recipe-list--heading {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 0.5rem;
+  border-bottom: solid rgba(182, 182, 182, 0.552) 1px;
+}
+.recipe-list--items {
+  margin-left: 1.3rem;
+}
+.recipe-list--items li {
+  padding-block: 0.3rem;
 }/*# sourceMappingURL=main.css.map */

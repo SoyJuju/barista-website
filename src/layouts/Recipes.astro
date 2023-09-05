@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  image: string;
+}
+
+const { title } = Astro.props;
+const { image } = Astro.props;
+
+import '../styles/main.css';
+
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title={title}>
+  <main class="recipe">
+    <div class="container">
+      <h1 class="recipe--title | fw-regular padding-block-600 text-neutral-100">
+        {title}
+      </h1>
+      <section class="recipe--container">
+        <img class="recipe--image" src={image} alt="" />
+        <slot />
+      </section>
+    </div>
+  </main>
+</Layout>

@@ -36,38 +36,118 @@ import CheeseTaro from '../../assets/recipe_grid/cheese taro.jpg';
 
 export default function IceCoffee() {
   const CheeseDrinks = [
-    { src: CheeseMango.src, link: '/', label: 'Cheese Mango' },
-    { src: CheeseGrape.src, link: '/', label: 'Cheese Grape' },
-    { src: CheesePineapple.src, link: '/', label: 'Cheese Pineapple' },
-    { src: CheeseStrawberry.src, link: '/', label: 'Cheese Strawberry' },
-    { src: CheeseChocolate.src, link: '/', label: 'Cheese Chocolate' },
-    { src: CheeseMatcha.src, link: '/', label: 'Cheese Matcha' },
-    { src: CheeseTaro.src, link: '/', label: 'Cheese Taro' },
+    {
+      src: CheeseMango.src,
+      link: '/Drinks/cheeseMango',
+      label: 'Cheese Mango',
+    },
+    {
+      src: CheeseGrape.src,
+      link: '/Drinks/cheeseGrape',
+      label: 'Cheese Grape',
+    },
+    {
+      src: CheesePineapple.src,
+      link: '/Drinks/cheesePineapple',
+      label: 'Cheese Pineapple',
+    },
+    {
+      src: CheeseStrawberry.src,
+      link: '/Drinks/cheeseStrawberry',
+      label: 'Cheese Strawberry',
+    },
+    {
+      src: CheeseChocolate.src,
+      link: '/Drinks/cheeseChocolate',
+      label: 'Cheese Chocolate',
+    },
+    {
+      src: CheeseMatcha.src,
+      link: '/Drinks/cheeseMatcha',
+      label: 'Cheese Matcha',
+    },
+    { src: CheeseTaro.src, link: '/Drinks/cheeseTaro', label: 'Cheese Taro' },
   ];
 
   const FruitTea = [
-    { src: IceLemonTea.src, link: '/', label: 'Ice Lemon Tea' },
-    { src: HoneyLemonTea.src, link: '/', label: 'Honey Lemon Tea' },
-    { src: PassionLemonTea.src, link: '/', label: 'Passion Lemon Tea' },
-    { src: PeachFruitTea.src, link: '/', label: 'Peach Fruit Tea' },
-    { src: PeachGreenTea.src, link: '/', label: 'Peach Green Tea' },
-    { src: JasmineGreenTea.src, link: '/', label: 'Jasmine Green Tea' },
+    { src: IceLemonTea.src, link: '/Drinks/lemonTea', label: 'Ice Lemon Tea' },
+    {
+      src: HoneyLemonTea.src,
+      link: '/Drinks/honeyTea',
+      label: 'Honey Lemon Tea',
+    },
+    {
+      src: PassionLemonTea.src,
+      link: '/Drinks/passionTea',
+      label: 'Passion Lemon Tea',
+    },
+    {
+      src: PeachFruitTea.src,
+      link: '/Drinks/peachTea',
+      label: 'Peach Fruit Tea',
+    },
+    {
+      src: PeachGreenTea.src,
+      link: '/Drinks/greenTea',
+      label: 'Peach Green Tea',
+    },
+    {
+      src: JasmineGreenTea.src,
+      link: '/Drinks/jasmineTea',
+      label: 'Jasmine Green Tea',
+    },
   ];
 
   const MilkTea = [
-    { src: TaiwanMilkTea.src, link: '/', label: 'Taiwan Milk Tea' },
-    { src: ChocolateBobaLatte.src, link: '/', label: 'Chocolate Boba Latte' },
-    { src: MatchaBobaLatte.src, link: '/', label: 'Matcha Boba Latte' },
-    { src: TaroBobaLatte.src, link: '/', label: 'Taro Boba Latte' },
+    {
+      src: TaiwanMilkTea.src,
+      link: '/Drinks/taiwanTea',
+      label: 'Taiwan Milk Tea',
+    },
+    {
+      src: ChocolateBobaLatte.src,
+      link: '/Drinks/chocolateTea',
+      label: 'Chocolate Boba Latte',
+    },
+    {
+      src: MatchaBobaLatte.src,
+      link: '/Drinks/matchaTea',
+      label: 'Matcha Boba Latte',
+    },
+    {
+      src: TaroBobaLatte.src,
+      link: '/Drinks/taroTea',
+      label: 'Taro Boba Latte',
+    },
   ];
 
   const Soda = [
-    { src: Mojito.src, link: '/', label: 'Mojito' },
-    { src: PassionMojito.src, link: '/', label: 'Passion Mojito' },
-    { src: RaspberryMojito.src, link: '/', label: 'Raspberry Mojito' },
-    { src: LimeCoffeeSoda.src, link: '/', label: 'Lime Coffee Soda' },
-    { src: HoneyLemonSoda.src, link: '/', label: 'Honey Lemon Soda' },
-    { src: LemonPeachTeaSoda.src, link: '/', label: 'Lemon Peach Tea Soda' },
+    { src: Mojito.src, link: '/Drinks/mojito', label: 'Mojito' },
+    {
+      src: PassionMojito.src,
+      link: '/Drinks/passionMojito',
+      label: 'Passion Mojito',
+    },
+    {
+      src: RaspberryMojito.src,
+      link: '/Drinks/raspberryMojito',
+      label: 'Raspberry Mojito',
+    },
+    {
+      src: LimeCoffeeSoda.src,
+      link: '/Drinks/limeSoda',
+      label: 'Lime Coffee Soda',
+    },
+    {
+      src: HoneyLemonSoda.src,
+      link: '/Drinks/honeySoda',
+      label: 'Honey Lemon Soda',
+    },
+    {
+      src: LemonPeachTeaSoda.src,
+      link: '/Drinks/',
+      label: 'Lemon Peach Tea Soda',
+    },
   ];
 
   const isDesktop = useMediaQuery('(min-width: 670px)');

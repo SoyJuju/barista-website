@@ -1,0 +1,30 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import CheeseStrawberries from '../../assets/recipe_tag/cheese strawberry.webp';
+
+const Ingredients = [
+  'Cup Size - 700 ml',
+  'Strawberry Fruit - 150 to 200 grams',
+  'Water - 30 grams',
+  'Queen Strawberry Syrup - 20 grams',
+  'Juniper Strawberry Syrup - 20 grams',
+  'Ice - 200 grams',
+  'Cheese Powder - 35 grams',
+  'Long Beach Cheese Powder - 20 grams',
+  'Whipped Cream Powder',
+  'Cold Milk - 200 grams',
+];
+
+const Directions = [
+  'Mix both types of cheese powder with cold milk and whipped cream to make 50 grams of cheese foam',
+  'Add all the ingredients into a blender',
+  'Blend them until the ice is into small bits but not dissolved',
+  'Pour the contents into a specifed cup',
+];
+---
+
+<Recipes title="Cheese Strawberry Recipe" image={CheeseStrawberries.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

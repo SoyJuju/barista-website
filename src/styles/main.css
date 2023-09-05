@@ -736,10 +736,13 @@ svg {
   }
 }
 .recipe--list-container {
+  width: min(35rem, 100%);
+}
+.recipe--list-container h2 {
   margin-left: 7rem;
 }
 @media (max-width: 65em) {
-  .recipe--list-container {
+  .recipe--list-container h2 {
     margin-left: 0;
   }
 }
@@ -762,6 +765,13 @@ svg {
   display: grid;
   row-gap: 2rem;
   font-size: 1.25rem;
+  width: min(35rem, 100%);
+  margin-left: 7rem;
+}
+@media (max-width: 65em) {
+  .recipe-list {
+    margin-left: 0;
+  }
 }
 .recipe-list a {
   color: #ffffff;

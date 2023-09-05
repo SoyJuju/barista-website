@@ -28,10 +28,14 @@
   }
 
   &--list-container {
-    margin-left: 7rem;
+    width: min(35rem, 100%);
 
-    @media (max-width: $breakpoint-850) {
-      margin-left: 0;
+    h2 {
+      margin-left: 7rem;
+
+      @media (max-width: $breakpoint-850) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -58,6 +62,13 @@
   row-gap: 2rem;
 
   font-size: 1.25rem;
+  width: min(35rem, 100%);
+
+  margin-left: 7rem;
+
+  @media (max-width: $breakpoint-850) {
+    margin-left: 0;
+  }
 
   a {
     color: getColor(neutral, 100);

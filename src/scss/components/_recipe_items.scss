@@ -20,9 +20,5 @@
     @media (max-width: $breakpoint-800) {
       font-size: getFontSize(small, 600);
     }
-
-    @media (max-width: $breakpoint-500) {
-      font-size: getFontSize(small, 650);
-    }
   }
 }

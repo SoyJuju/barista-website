@@ -36,7 +36,7 @@ import BlueberryFrappe from '../../assets/recipe_grid/blueberry frappe.jpg';
 import OreoFrappe from '../../assets/recipe_grid/oreo frappe.jpg';
 
 import IcedMayMyoBrew from '../../assets/recipe_grid/ice brew.webp';
-import IcedMochaBrew from '../../assets/recipe_grid/mocha brew.jpg';
+import IcedMochaBrew from '../../assets/recipe_grid/ice mocha brew.jpg';
 import IcedBlackBrew from '../../assets/recipe_grid/ice brew black.jpg';
 import IcedAmericanoBrew from '../../assets/recipe_grid/ice brew americano.jpg';
 

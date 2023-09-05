@@ -740,6 +740,7 @@ svg {
 }
 .recipe--list-container h2 {
   margin-left: 7rem;
+  width: 100%;
 }
 @media (max-width: 65em) {
   .recipe--list-container h2 {

@@ -1,0 +1,72 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import HotEspresso from '../../assets/recipe_tag/espresso.png';
+
+const Normal_Ingredients = [
+  'Coffee gram - 8g',
+  'Liquid expresso - 30 ml',
+  'Extraction time - 20 to 30 sec',
+];
+
+const Normal_Directions = [
+  'Put 8 grams of ground coffee in the portafilter',
+  'Extract a yield of 30 ml within extraction time',
+];
+
+const Lungo_Ingredients = [
+  'Coffee gram - 8g',
+  'Liquid expresso - 100 to 120 ml',
+  'Extraction time - 45 to 60 sec',
+];
+
+const Lungo_Directions = [
+  'Put 8 grams of ground coffee in the portafilter',
+  'Extract a yield of 100 to 120 ml within extraction time',
+];
+
+const Ristretto_Ingredients = [
+  'Coffee gram - 16g',
+  'Liquid expresso - 30 ml',
+  'Extraction time - 20 to 30 sec',
+];
+
+const Ristretto_Directions = [
+  'Put 16 grams of ground coffee in the portafilter',
+  'Extract a yield of 30 ml within extraction time',
+];
+
+const Double_Ingredients = [
+  'Coffee gram - 16g',
+  'Liquid expresso - 60 ml',
+  'Extraction time - 20 to 30 sec',
+];
+
+const Double_Directions = [
+  'Put 16 grams of ground coffee in the portafilter',
+  'Extract a yield of 60 ml within extraction time',
+];
+---
+
+<Recipes title="Americano Recipe" image={HotEspresso.src}>
+  <div class="recipe--list-container">
+    <h2 class="recipe--heading">Single Shot</h2>
+    <RecipeList
+      Ingredients={Normal_Ingredients}
+      Directions={Normal_Directions}
+    />
+    <h2 class="recipe--heading">Lungo</h2>
+    <RecipeList Ingredients={Lungo_Ingredients} Directions={Lungo_Directions} />
+    <h2 class="recipe--heading">Ristretto</h2>
+    <RecipeList
+      Ingredients={Ristretto_Ingredients}
+      Directions={Ristretto_Directions}
+    />
+    <h2 class="recipe--heading">Double Shot</h2>
+    <RecipeList
+      Ingredients={Double_Ingredients}
+      Directions={Double_Directions}
+    />
+  </div>
+</Recipes>

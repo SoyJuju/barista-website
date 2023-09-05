@@ -35,35 +35,79 @@ import BrewAmericano from '../../assets/recipe_grid/brew americano.jpg';
 
 export default function HotCoffee() {
   const HotCoffee = [
-    { src: Espresso.src, link: '/', label: 'Espresso' },
-    { src: Macchiato.src, link: '/', label: 'Espresso Macchiato' },
-    { src: Companna.src, link: '/', label: 'Espresso Companna' },
-    { src: Romano.src, link: '/', label: 'Espresso Romano' },
-    { src: Cappuccino.src, link: '/', label: 'Cappuccino' },
-    { src: FlatWhite.src, link: '/', label: 'Flat White' },
-    { src: CafeMocha.src, link: '/', label: 'Cafe Mocha' },
-    { src: HotChoclate.src, link: '/', label: 'Hot Chocolate' },
+    { src: Espresso.src, link: '/HotCoffee/espresso', label: 'Espresso' },
+    {
+      src: Macchiato.src,
+      link: '/HotCoffee/macchiato',
+      label: 'Espresso Macchiato',
+    },
+    {
+      src: Companna.src,
+      link: '/HotCoffee/companna',
+      label: 'Espresso Companna',
+    },
+    { src: Romano.src, link: '/HotCoffee/romano', label: 'Espresso Romano' },
+    { src: Cappuccino.src, link: '/HotCoffee/cappuccino', label: 'Cappuccino' },
+    { src: FlatWhite.src, link: '/HotCoffee/flatWhite', label: 'Flat White' },
+    { src: CafeMocha.src, link: '/HotCoffee/cafeMocha', label: 'Cafe Mocha' },
+    {
+      src: HotChoclate.src,
+      link: '/HotCoffee/hotChocolate',
+      label: 'Hot Chocolate',
+    },
     { src: Americano.src, link: '/HotCoffee/americano', label: 'Americano' },
-    { src: Black.src, link: '/', label: 'Black' },
-    { src: LongBlack.src, link: '/', label: 'Long Black' },
-    { src: HandDrip.src, link: '/', label: 'Hand Drip' },
+    { src: Black.src, link: '/HotCoffee/black', label: 'Black' },
+    { src: LongBlack.src, link: '/HotCoffee/longBlack', label: 'Long Black' },
+    { src: HandDrip.src, link: '/HotCoffee/handDrip', label: 'Hand Drip' },
   ];
 
   const HotLatte = [
-    { src: Latte.src, link: '/', label: 'Latte' },
-    { src: MatchaLatte.src, link: '/', label: 'Matcha Latte' },
-    { src: TaroLatte.src, link: '/', label: 'Taro Latte' },
-    { src: VanillaLatte.src, link: '/', label: 'Vanilla Latte' },
-    { src: CaramelLatte.src, link: '/', label: 'Caramel Latte' },
-    { src: HazelnutLatte.src, link: '/', label: 'Hazelnut Latte' },
-    { src: ChocolateLatte.src, link: '/', label: 'Chocolate Latte' },
+    { src: Latte.src, link: '/HotCoffee/latte', label: 'Latte' },
+    {
+      src: MatchaLatte.src,
+      link: '/HotCoffee/matchaLatte',
+      label: 'Matcha Latte',
+    },
+    { src: TaroLatte.src, link: '/HotCoffee/taroLatte', label: 'Taro Latte' },
+    {
+      src: VanillaLatte.src,
+      link: '/HotCoffee/vanillaLatte',
+      label: 'Vanilla Latte',
+    },
+    {
+      src: CaramelLatte.src,
+      link: '/HotCoffee/caramelLatte',
+      label: 'Caramel Latte',
+    },
+    {
+      src: HazelnutLatte.src,
+      link: '/HotCoffee/hazelnutLatte',
+      label: 'Hazelnut Latte',
+    },
+    {
+      src: ChocolateLatte.src,
+      link: '/HotCoffee/chocolateLatte',
+      label: 'Chocolate Latte',
+    },
   ];
 
   const HotBrew = [
-    { src: MayMyoBrew.src, link: '/', label: 'May Myo Brew Coffee' },
-    { src: MochaBrew.src, link: '/', label: 'Mocha Brew' },
-    { src: BrewBlack.src, link: '/', label: 'Black Coffee Brew' },
-    { src: BrewAmericano.src, link: '/', label: 'Americano Brew' },
+    {
+      src: MayMyoBrew.src,
+      link: '/HotCoffee/mayMyoBrew',
+      label: 'May Myo Brew Coffee',
+    },
+    { src: MochaBrew.src, link: '/HotCoffee/mochaBrew', label: 'Mocha Brew' },
+    {
+      src: BrewBlack.src,
+      link: '/HotCoffee/brewBlack',
+      label: 'Black Coffee Brew',
+    },
+    {
+      src: BrewAmericano.src,
+      link: '/HotCoffee/brewAmericano',
+      label: 'Americano Brew',
+    },
   ];
 
   const isDesktop = useMediaQuery('(min-width: 630px)');

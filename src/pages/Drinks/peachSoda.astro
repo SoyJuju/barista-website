@@ -1,0 +1,29 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import LemonPeachTea from '../../assets/recipe_tag/lemon peach tea soda.jpg';
+
+const Ingredients = [
+  'Cup Size - 700 ml',
+  'Lipton Tea - 1 bag',
+  'Hot Water - 30 grams',
+  'DF Peach - 20 grams',
+  'LB Peach - 10 grams',
+  'Ice - 200 grams ',
+  'Honey - 10 grams',
+  'Lemon - 40 grams',
+  'Sugar Syrup - 20 grams',
+  'Soda - 200 grams',
+];
+
+const Directions = [
+  'Dip the tea bag in the hot water',
+  'Add the tea dipped hot water and the remaining ingredients into a shaker',
+  'Pour the contents of the shaker into the specified cup and add ice',
+];
+---
+
+<Recipes title="Lemon Peach Tea Recipe" image={LemonPeachTea.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

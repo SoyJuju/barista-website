@@ -1,0 +1,24 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import LimeCoffeeSoda from '../../assets/recipe_tag/lime coffee soda.jpg';
+
+const Ingredients = [
+  '<a href="/HotCoffee/espresso">Ristretto</a>',
+  'Cup Size - 700 ml',
+  'Ice - 200 grams ',
+  'Lemon - 40 grams',
+  'Sugar Syrup - 50 to 60 grams',
+  'Soda - 200 grams',
+];
+
+const Directions = [
+  'Add the ingredients into a shaker',
+  'Pour the contents of the shaker into the specified cup and add ice',
+];
+---
+
+<Recipes title="Lime Coffee Soda Recipe" image={LimeCoffeeSoda.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

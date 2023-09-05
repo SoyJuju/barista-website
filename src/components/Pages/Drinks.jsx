@@ -145,7 +145,7 @@ export default function IceCoffee() {
     },
     {
       src: LemonPeachTeaSoda.src,
-      link: '/Drinks/',
+      link: '/Drinks/peachSoda',
       label: 'Lemon Peach Tea Soda',
     },
   ];

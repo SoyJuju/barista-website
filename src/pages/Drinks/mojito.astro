@@ -1,0 +1,28 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import Mojitos from '../../assets/recipe_tag/mojito.jpg';
+
+const Ingredients = [
+  'Cup Size - 700 ml',
+  'Mint - 2 to 3 pieces',
+  'Monin Mint Syrup - 10 grams',
+  'Brown Sugar Stick - 1 bag',
+  'Ice - 200 grams ',
+  'Lime - 1/2',
+  'Lemon - 40 grams',
+  'Sugar Syrup - 50 grams',
+  'Soda - 200 grams',
+];
+
+const Directions = [
+  'Grind the mint, brown sugar and lime juice with a muddler',
+  'Add the grinded contents and the remaining ingredients into a shaker',
+  'Pour the contents of the shaker into the specified cup and add ice',
+];
+---
+
+<Recipes title="Mojito Recipe" image={Mojitos.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

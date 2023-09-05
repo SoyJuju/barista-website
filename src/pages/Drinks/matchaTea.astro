@@ -2,7 +2,7 @@
 import Recipes from '../../layouts/Recipes.astro';
 import RecipeList from '../../components/Main/Recipes';
 
-import TaiwanMilkTea from '../../assets/recipe_tag/taiwan milk tea.png';
+import MatchaBoba from '../../assets/recipe_tag/matcha boba latte.jpg';
 
 const Ingredients = [
   'Cup Size - 360 ml',
@@ -21,6 +21,6 @@ const Directions = [
 ];
 ---
 
-<Recipes title="Taiwan Milk Tea Recipe" image={TaiwanMilkTea.src}>
+<Recipes title="Matcha Boba Latte Recipe" image={MatchaBoba.src}>
   <RecipeList Ingredients={Ingredients} Directions={Directions} />
 </Recipes>

@@ -1,0 +1,25 @@
+---
+import Recipes from '../../layouts/Recipes.astro';
+import RecipeList from '../../components/Main/Recipes';
+
+import HoneyLemonSoda from '../../assets/recipe_tag/honey lemon soda.jpg';
+
+const Ingredients = [
+  'Cup Size - 700 ml',
+  'Honey - 40 grams',
+  'Hot Water - 30 grams',
+  'Ice - 200 grams ',
+  'Lime - 40 grams',
+  'Sugar Syrup - 20 grams',
+  'Soda - 200 grams',
+];
+
+const Directions = [
+  'Add the ingredients into a shaker',
+  'Pour the contents of the shaker into the specified cup and add ice',
+];
+---
+
+<Recipes title="Honey Lemon Soda Recipe" image={HoneyLemonSoda.src}>
+  <RecipeList Ingredients={Ingredients} Directions={Directions} />
+</Recipes>

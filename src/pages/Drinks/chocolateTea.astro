@@ -2,7 +2,7 @@
 import Recipes from '../../layouts/Recipes.astro';
 import RecipeList from '../../components/Main/Recipes';
 
-import PeachFruitTea from '../../assets/recipe_tag/peach fruit tea.webp';
+import ChocolateBoba from '../../assets/recipe_tag/chocolate boba latte.jpg';
 
 const Ingredients = [
   'Cup Size - 360 ml',
@@ -22,6 +22,6 @@ const Directions = [
 ];
 ---
 
-<Recipes title="Chocolate Boba Latte Recipe" image={PeachFruitTea.src}>
+<Recipes title="Chocolate Boba Latte Recipe" image={ChocolateBoba.src}>
   <RecipeList Ingredients={Ingredients} Directions={Directions} />
 </Recipes>

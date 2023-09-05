@@ -5,6 +5,7 @@
 .recipe {
   padding-top: 4rem;
   background-color: getColor(neutral, 800);
+  min-height: 100vh;
 
   &--title {
     text-align: center;

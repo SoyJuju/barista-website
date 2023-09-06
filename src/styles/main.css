@@ -808,10 +808,11 @@ svg {
   font-family: "Open Sans", sans-serif;
   padding-top: 1rem;
   padding-bottom: 0.4rem;
-  text-decoration-line: line-through;
-  -webkit-text-decoration-line: line-through;
+  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
   text-decoration-color: rgba(182, 182, 182, 0.552);
   -webkit-text-decoration-color: rgba(182, 182, 182, 0.552);
+  text-decoration-thickness: 1px;
+  -webkit-text-decoration-thickness: 1px;
   text-underline-offset: 0.5rem;
-  -webkit-underline-offset: 0.5rem;
 }/*# sourceMappingURL=main.css.map */

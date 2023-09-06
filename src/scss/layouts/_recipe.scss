@@ -102,11 +102,12 @@
     font-family: $font-family-third;
     padding-top: 1rem;
     padding-bottom: 0.4rem;
-    text-decoration-line: line-through;
-    -webkit-text-decoration-line: line-through;
+    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
     text-decoration-color: getColor(accent, 400);
     -webkit-text-decoration-color: getColor(accent, 400);
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-thickness: 1px;
     text-underline-offset: 0.5rem;
-    -webkit-underline-offset: 0.5rem;
   }
 }

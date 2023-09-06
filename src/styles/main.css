@@ -409,6 +409,11 @@ body {
   padding-bottom: 1.8rem;
 }
 
+.no-marker {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .container {
   --max-width: 1300px;
   --padding: clamp(1rem, 5vw, 3rem);
@@ -796,4 +801,14 @@ svg {
 }
 .recipe-list--items li {
   padding-block: 0.3rem;
+}
+.recipe-list--cheese-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 0.4rem;
+  -webkit-text-decoration: underline 1px rgba(182, 182, 182, 0.552);
+          text-decoration: underline 1px rgba(182, 182, 182, 0.552);
+  text-underline-offset: 0.5rem;
 }/*# sourceMappingURL=main.css.map */

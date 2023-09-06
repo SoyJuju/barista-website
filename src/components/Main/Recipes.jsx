@@ -3,13 +3,17 @@ import '../../styles/main.css';
 export default function Recipes(props) {
   const { Ingredients, Directions } = props;
 
-  const Requirements = Ingredients.map((ingredient, index) => (
-    <li
-      className="text-neutral-100"
-      key={index}
-      dangerouslySetInnerHTML={{ __html: ingredient }}
-    />
-  ));
+  const Requirements = Ingredients.map((ingredient, index) => {
+    const noMarkerClass = ingredient.includes('Cheese Foam') ? 'no-marker' : '';
+
+    return (
+      <li
+        className={`text-neutral-100 ${noMarkerClass}`}
+        key={index}
+        dangerouslySetInnerHTML={{ __html: ingredient }}
+      />
+    );
+  });
 
   const Methods = Directions.map((direction, index) => (
     <li

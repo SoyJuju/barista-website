@@ -95,4 +95,14 @@
       padding-block: 0.3rem;
     }
   }
+
+  &--cheese-title {
+    font-size: 1.6rem;
+    font-weight: getFontWeight(medium);
+    font-family: $font-family-third;
+    padding-top: 1rem;
+    padding-bottom: 0.4rem;
+    text-decoration: underline 1px getColor(accent, 400);
+    text-underline-offset: 0.5rem;
+  }
 }

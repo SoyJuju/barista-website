@@ -5,9 +5,12 @@ import menu_icon from '../../assets/main_images/icon-menu.svg';
 import x_icon from '../../assets/main_images/icon-x.svg';
 
 import { useRef, useState, useEffect } from 'react';
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 
 export default function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
   const [height, setHeight] = useState(0);
   const navRef = useRef(null);
 
@@ -20,10 +23,25 @@ export default function Navbar() {
     };
   }, [mobileNav]);
 
+  useMotionValueEvent(scrollY, 'change', (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous && latest > 200) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
+
   const navHeight = 64 + height;
 
   return (
-    <header
+    <motion.header
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: '-100%' },
+      }}
+      animate={hidden ? 'hidden' : 'visible'}
+      transition={{ duration: 0.35, ease: 'easeInOut' }}
       className="header"
       style={
         mobileNav
@@ -76,6 +94,6 @@ export default function Navbar() {
           />
         </button>
       </div>
-    </header>
+    </motion.header>
   );
 }
